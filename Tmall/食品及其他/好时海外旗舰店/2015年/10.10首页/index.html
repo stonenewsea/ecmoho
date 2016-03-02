@@ -1,0 +1,545 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+.tshop-pbsm-shop-self-defined .skin-box-bd {
+    overflow: visible;
+}
+/*店招自定义模块，使其990范围之外的图片显示。*/
+.grid-m .tshop-pbsm-shop-custom-banner, .tshop-pbsm-shop-custom-banner {
+    overflow: visible;
+}
+
+.skin-box .skin-box-bd {
+    background: none;
+}
+/*淘宝两个自定义模块之间淘宝定义是相差10px;改为0px;*/
+.tshop-pbsm-shop-self-defined {
+    margin-bottom: 0px;
+}
+/*去掉热点的边框*/
+area {
+    outline: none;
+}
+
+.tshop-pbsm-shop-self-defined .skin-box-bd {
+    line-height: 0;
+}
+
+/*  绝对定位  */
+.pos-A {
+    position: absolute;
+}
+
+/* 相对定位  */
+.pos-R {
+    position: relative;
+}
+
+/*  左浮动  */
+.l-left {
+    float: left;
+}
+
+/*  右浮动  */
+.r-right {
+    float: right;
+}
+
+/*清除浮动*/
+.clear {
+    clear: both;
+}
+
+/*文本左中右对其*/
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+/*店招全屏*/
+.header {
+    width: 990px;
+    position: relative;
+}
+
+    .header .header-absolute {
+        width: 1920px;
+        position: absolute;
+        margin-left: -960px;
+        left: 50%;
+    }
+
+
+/* 全屏 */
+.wrap {
+    width: 990px;
+    position: relative;
+}
+
+    .wrap .wrap-absolute {
+        width: 1920px;
+        position: absolute;
+        margin-left: -960px;
+        left: 50%;
+    }
+
+/*店尾全屏*/
+.footer {
+    width: 990px;
+}
+
+    .footer .footer-absolute {
+        width: 1920px;
+        position: absolute;
+        margin-left: -475px;
+    }
+
+
+/*导航*/
+.header .header-absolute .nav {
+    background: #012545;
+    width: 1920px;
+    height: 30px;
+    overflow: hidden;
+}
+
+    .header .header-absolute .nav ul {
+        margin-left: 465px;
+    }
+
+        .header .header-absolute .nav ul li {
+            float: left;
+        }
+
+/*无序列表模块*/
+
+.list-style ul {
+    float: left;
+}
+
+    .list-style ul li a {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 25px;
+        font-family: 微软雅黑;
+    }
+
+    .list-style ul li {
+        text-align: center;
+    }
+
+        .list-style ul li a {
+            color: #fff;
+            -webkit-transition: color .5s ease;
+            -moz-transition: color .5s ease;
+            -o-transition: color .5s ease;
+            transition: color .5s ease;
+        }
+
+            .list-style ul li a:hover {
+                color: #ac3600;
+                text-decoration: underline;
+            }
+
+/*给定义列表实现水平显示效果*/
+.dl-horizontal {
+    width: 600px;
+    font-size: 14px;
+}
+
+    .dl-horizontal dt {
+        overflow: hidden;
+        clear: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .dl-horizontal dd {
+        text-indent: 10px;
+        margin-left: 0px;
+    }
+
+dl {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+dt,
+dd {
+    line-height: 1.42857143;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0;
+}
+
+/*正常两张图片切换*/
+.normal-first {
+    position: relative;
+    cursor: pointer;
+}
+
+.normal-final {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.normal-first:hover .normal-final {
+    opacity: 1;
+}
+
+/*鼠标滑过渐隐显示第二张图片*/
+.fadeout-first {
+    position: relative;
+    cursor: pointer;
+}
+
+.fadeout-final {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.fadeout-first:hover .fadeout-final {
+    opacity: 1;
+}
+
+/*鼠标滑过翻滚效果*/
+.roll-effect ul li a {
+    display: block;
+    height: 30px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.roll-effect ul li.roll_one a {
+    background: url(TB2CcvXaXXXXXcDXXXXXXXXXXXX_!!1114884337.png) no-repeat;
+    width: 130px;
+}
+
+.roll-effect ul li a:hover {
+    background-position: 0 -30px;
+}
+
+
+/*搜索模块*/
+.btn-default {
+    border: none;
+    float: left;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+}
+
+.input-search {
+
+    width: 119px;
+    height: 21px;
+    text-indent: 10px;
+    color: #797979;
+    line-height: 21px;
+    background: url(input.png)no-repeat;
+}
+
+.btn-search {
+    background: url(btn.png) no-repeat;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+/*开灯关灯效果*/
+.switch-effect ul li {
+    float: left;
+    width: 1201px;
+    height: 146px;
+}
+
+    .switch-effect ul li a {
+        display: block;
+        float: left;
+        width: 195px;
+        height: 146px;
+    }
+
+    .switch-effect ul li img {
+        opacity: 1;
+    }
+
+    .switch-effect ul li:hover img {
+        opacity: 0.5;
+    }
+
+    .switch-effect ul li a:hover img {
+        opacity: 1;
+    }
+
+
+
+ul, input {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+.sign {height:120px;}
+.menu {height:30px;background:#fff233;}
+.menu ul {width:990px;height:30px;display:block;margin:0 auto;}
+.menu li {float:left;}
+.pos {position:relative;}
+.pos:hover .pos_bg {opacity:1;}
+.pos_bg {left: 0;opacity: 0;position: absolute;top: 0;transition: all 0.2s linear 0s;}
+.search {width:144px;height:25px;background:url(https://img.alicdn.com/imgextra/i4/2637981973/TB2.IGLfVXXXXauXpXXXXXXXXXX_!!2637981973.jpg) no-repeat;float:right;margin:5px 0 0 26px;}
+
+/*开门*/
+.main3 {text-align:center;position:relative; z-index:9}
+.main3 li {width:1920px;height:850px;transition:all 1s ease 3s;position:absolute;left:0;z-index:5;opacity:1;}
+.main3 li.act_time {left:50000px;opacity:0;transition:all 1s ease 4s;}
+.main3 li.act_time div {transition:all 1s ease 4s;}
+.main3 .men1{width:960px;height:850px;left: 0px;position:absolute;top:0;background:url(https://img.alicdn.com/imgextra/i3/2637981973/TB2USUafFXXXXXRXXXXXXXXXXXX_!!2637981973.png)  no-repeat;opacity:1;}
+.main3 .men2{width:960px;height:850px;right:960px;position:absolute;top:0;background:url(https://img.alicdn.com/imgextra/i2/2637981973/TB2uCzHfFXXXXcHXpXXXXXXXXXX_!!2637981973.png) no-repeat;opacity:1;}
+.main3 .door .men1{left:0px;transition:left 4s ease 0s,top 0s ease 4s;}
+.main3 .door .men2{left:960px;transition:left 4s ease 0s,top 0s ease 4s;}
+.main3 .door.act_time .men1{left:-960px;top:-1767px;}
+.main3 .door.act_time .men2{left:1920px;}
+.menCenters {height:500px;text-align:center;position:relative;z-index:11}
+.menCenters a{font:26px/500px Microsoft yahei;color:#000;}
+.menCenters a:hover {color:#F00}
+.none {display:none;}
+.wp_panel {margin-top:-850px;}
+.wp {
+    opacity: 1;
+    height: 850px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+	margin-left:-960px;
+}
+
+.imgleft {left:0px;position:absolute;top:0px;transition: 4s all linear;}
+.imgright {left:960px;position:absolute;top:0px;transition: 4s all linear;}
+.wp.ks-active  .imgleft {left:-960px;}
+.wp.ks-active  .imgright {left:1920px;}
+.wp_addle {margin-top:-850px;}
+.wp.ks-active .disimg{display:none;}
+.wrap .m_l{margin-left:-1417px}
+.clearfix:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.clearfix {display: inline-table;}
+
+
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+*:focus {outline: none;} 
+
+</style>
+</head>
+
+<body>
+<div class="header" style="height:150px;line-height:0px;">
+  <div class="header-absolute">
+  	<div style="width:1920px;height:150px;overflow:hidden;">
+    	<div class="sign">
+        	<img src="https://img.alicdn.com/imgextra/i1/2637981973/TB2OdWJfVXXXXaGXpXXXXXXXXXX_!!2637981973.jpg" class="l-left"  alt=""/>
+            <img src="https://img.alicdn.com/imgextra/i2/2637981973/TB2nsK8fVXXXXXuXXXXXXXXXXXX_!!2637981973.jpg" alt="" usemap="#Map" class="l-left"/>
+            <map name="Map">
+              <area target="_blank" shape="rect" coords="392,45,418,64" href="//favorite.taobao.com/popup/add_collection.htm?spm=a220o.1000855.1997427133.5.BOZfGg&id=129657536&itemid=129657536&itemtype=0&ownerid=175483984071bb89bb05f643d81a4106&scjjc=2&scene=taobao_shop">
+              <area target="_blank" shape="rect" coords="518,-7,766,114" href="https://detail.tmall.hk/hk/item.htm?id=522665352268">
+              <area target="_blank" shape="rect" coords="769,4,987,116" href="https://detail.tmall.hk/hk/item.htm?id=522660269743">
+            </map>
+            <img src="https://img.alicdn.com/imgextra/i2/2637981973/TB2dfmIfVXXXXaAXpXXXXXXXXXX_!!2637981973.jpg" class="l-left"  alt=""/>
+        </div>
+        <div class="menu">
+        	<ul>
+           	  <li class="pos" style="margin-left:0;"><img src="https://img.alicdn.com/imgextra/i3/2637981973/TB2CRWOfVXXXXXvXpXXXXXXXXXX_!!2637981973.jpg" alt=" menu1.jpg"/><div class="pos_bg"> <a target="_blank" href="https://hersheysus.tmall.hk/shop/view_shop.htm?spm=a1z0e.6651725.0.0.mRfGyn&mytmenu=mdianpu&utkn=g%2Cxlb4vmn2upg6frxmxwrll2q1444446188510&user_number_id=2637981973&scm=1028.1.1.20001"><img src="https://img.alicdn.com/imgextra/i2/2637981973/TB2bAeMfVXXXXXRXpXXXXXXXXXX_!!2637981973.jpg" alt=" menu01.jpg"/></a></div></li>
+              <li class="pos"><img src="https://img.alicdn.com/imgextra/i2/2637981973/TB206W6fVXXXXXOXXXXXXXXXXXX_!!2637981973.jpg" alt=" menu2.jpg"/><div class="pos_bg"> <a target="_blank" href="//hersheysus.tmall.hk/search.htm?spm=a1z10.3-b.w4011-12117803319.1.z3cO3R&scene=taobao_shop"><img src="https://img.alicdn.com/imgextra/i4/2637981973/TB20GK7fVXXXXXOXXXXXXXXXXXX_!!2637981973.jpg" alt=" menu02.jpg"/></a></div></li>
+              <li class="pos"><img src="https://img.alicdn.com/imgextra/i2/2637981973/TB2EBGCfVXXXXcdXpXXXXXXXXXX_!!2637981973.jpg" alt=" menu3.jpg"/><div class="pos_bg"> <a target="_blank" href="#"><img src="https://img.alicdn.com/imgextra/i2/2637981973/TB22cGNfVXXXXXMXpXXXXXXXXXX_!!2637981973.jpg" alt=" menu03.jpg"/></a></div></li>
+              <li class="pos"><img src="https://img.alicdn.com/imgextra/i4/2637981973/TB2x.1UfVXXXXceXXXXXXXXXXXX_!!2637981973.jpg" alt=" menu4.jpg"/><div class="pos_bg"> <a target="_blank" href="#"><img src="https://img.alicdn.com/imgextra/i4/2637981973/TB28MuNfVXXXXX1XpXXXXXXXXXX_!!2637981973.jpg" alt=" menu04.jpg"/></a></div></li>
+              <li class="pos"><img src="https://img.alicdn.com/imgextra/i1/2637981973/TB2ORKCfVXXXXbKXpXXXXXXXXXX_!!2637981973.jpg" alt=" menu5.jpg"/><div class="pos_bg"> <a target="_blank" href="#"><img src="https://img.alicdn.com/imgextra/i1/2637981973/TB2oI54fVXXXXarXXXXXXXXXXXX_!!2637981973.jpg" alt=" menu05.jpg"/></a></div></li>
+              <li class="pos"><img src="https://img.alicdn.com/imgextra/i4/2637981973/TB2z1SSfVXXXXcRXXXXXXXXXXXX_!!2637981973.jpg" alt=" menu6.jpg"/><div class="pos_bg"> <a target="_blank" href="#"><img src="https://img.alicdn.com/imgextra/i1/2637981973/TB2UGCJfVXXXXahXpXXXXXXXXXX_!!2637981973.jpg" alt=" menu06.jpg"/></a></div></li>
+              <li class="pos" style="margin-right:0"><img src="https://img.alicdn.com/imgextra/i4/2637981973/TB2XTOTfVXXXXceXXXXXXXXXXXX_!!2637981973.jpg" alt=" menu7.jpg"/><div class="pos_bg"> <a target="_blank" href="//favorite.taobao.com/popup/add_collection.htm?spm=a220o.1000855.1997427133.5.BOZfGg&id=129657536&itemid=129657536&itemtype=0&ownerid=175483984071bb89bb05f643d81a4106&scjjc=2&scene=taobao_shop"><img src="https://img.alicdn.com/imgextra/i3/2637981973/TB2091JfVXXXXaoXpXXXXXXXXXX_!!2637981973.jpg" alt=" menu07.jpg"/></a></div></li>
+              <li class="search">
+              	<form name="SearchForm" action="https://hersheysus.tmall.hk/search.htm?orderType=&viewType=grid&keyword=&lowPrice=&highPrice=" method="post" target="_blank">
+							 <input style="width:110px;height:19px;font:12px/19px simsun;border:none;padding:0;margin:1px 1px 1px 5px;;background:none;float:left;" value=" " name="keyword" placeholder="" /> <button style="width:27px;height:21px;border:none;background:none;float:left;cursor:pointer;" type="submit"></button> <input value="" name="userId" type="hidden" /> <input value="https://hersheysus.tmall.hk/" name="shopId" type="hidden" /> <input value="" name="view_type" type="hidden" /> <input value="" name="order_type" type="hidden" /> <input value="y" name="search" type="hidden" />&nbsp;
+						</form>
+            	</li>
+            </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="quanping">
+	<div class="absolute">
+		<div class="J_TWidget accordion1 section" data-widget-type="Accordion" data-widget-config="{
+
+	             &quot;triggerType&quot;: &quot;click&quot;,&quot;multiple&quot;: true
+
+	     }">
+			<div class="ks-switchable-trigger ks-active">
+				&nbsp;
+			</div>
+			<div style="height:850px;" class="ks-switchable-panel">
+				&nbsp;
+			</div>
+			<div class="ks-switchable-trigger wp" style="cursor:pointer;z-index:999;">
+				 <img class="imgleft" src="https://img.alicdn.com/imgextra/i2/2637981973/TB2FgeYfVXXXXbHXXXXXXXXXXXX_!!2637981973.png" alt=" left_M.png"/> 
+                 <img class="imgright" src="https://img.alicdn.com/imgextra/i3/2637981973/TB2.3mzfVXXXXctXpXXXXXXXXXX_!!2637981973.png" alt=" right_M.png"/>
+			</div>
+			<div class="ks-switchable-panel wp_addle" style="display:none;">
+				<div class="wrap" style="height:7646px;">
+					<div class="wrap-absolute">
+						<img src="https://img.alicdn.com/imgextra/i4/2637981973/TB2WkGTfVXXXXczXXXXXXXXXXXX_!!2637981973.jpg" alt=" banner1.jpg"/>
+                        <a name="M0"></a>
+						<img src="https://img.alicdn.com/imgextra/i1/2637981973/TB2v8m7fVXXXXXGXXXXXXXXXXXX_!!2637981973.jpg" alt=" banner2.jpg" usemap="#Mapsss"/>
+                        <map name="Mapsss">
+                          <area shape="rect" target="_blank" coords="539,91,736,182" href="https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=2637981973&activityId=a409c845613c4c079b9a428a4198323a">
+                          <area shape="rect" target="_blank" coords="753,92,946,181" href="https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=2637981973&activityId=d9113fde6c334655bd142606bd50b185">
+                          <area shape="rect" target="_blank" coords="965,91,1157,179" href="https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=2637981973&activityId=e03dd412da2e4972b9711dc31842e619">
+                          <area shape="rect" target="_blank" coords="1174,92,1361,180" href="https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=2637981973&activityId=1b461d63dc6c4668ad2d602ea9fee9ff">
+                          <area shape="rect" target="_blank" coords="999,25,1136,66" href="//favorite.taobao.com/popup/add_collection.htm?spm=a220o.1000855.1997427133.5.BOZfGg&id=129657536&itemid=129657536&itemtype=0&ownerid=175483984071bb89bb05f643d81a4106&scjjc=2&scene=taobao_shop">
+                        </map>
+                        <div style="background:url(https://img.alicdn.com/imgextra/i2/2637981973/TB2_X1MfVXXXXb7XpXXXXXXXXXX_!!2637981973.jpg) fixed repeat;height:833px;width:1920px;">
+      		<a name="M1"></a>
+            <img src="https://img.alicdn.com/imgextra/i2/2637981973/TB2cBGJfVXXXXb6XpXXXXXXXXXX_!!2637981973.png" alt=" 大牌争霸2.jpg" usemap="#Hs" border="0"/>
+            <map name="Hs">
+              <area shape="rect" coords="479,2,1455,442" href="https://detail.tmall.hk/hk/item.htm?id=522660306816" target="_blank">
+              <area shape="rect" coords="478,467,805,819" href="https://detail.tmall.hk/hk/item.htm?id=522660269743" target="_blank">
+              <area shape="rect" coords="809,466,1114,814" href="https://detail.tmall.hk/hk/item.htm?id=522665352268" target="_blank">
+              <area shape="rect" coords="1138,466,1452,813" href="https://detail.tmall.hk/hk/item.htm?id=522641267918" target="_blank">
+              <area shape="rect" coords="206,3,400,831" href="#M0" />
+              <area shape="rect" coords="1547,1,1578,836" href="#M5" />
+              <area shape="rect" coords="1577,1,1602,833" href="#M4" />
+              <area shape="rect" coords="1601,1,1627,830" href="#M3" />
+              <area shape="rect" coords="1626,2,1649,829" href="#M2" />
+              <area shape="rect" coords="1648,3,1671,830" href="#M1" />
+            </map>
+        </div>
+        <div>
+            <img src="https://img.alicdn.com/imgextra/i4/2637981973/TB2T7C4fVXXXXaeXXXXXXXXXXXX_!!2637981973.jpg" alt=" 好时巧克力.jpg"/>
+            <img src="https://img.alicdn.com/imgextra/i2/2637981973/TB220GVfVXXXXb7XXXXXXXXXXXX_!!2637981973.jpg" alt=" 旗下品牌.jpg"/>
+            <img src="https://img.alicdn.com/imgextra/i2/2637981973/TB2XVORfVXXXXc4XXXXXXXXXXXX_!!2637981973.jpg" alt=" 客服专区.jpg" usemap="#Hs7" border="0"/>
+            <map name="Hs7" id="Hs7">
+            <area shape="rect" coords="1017,134,1103,242" href="http://amos.alicdn.com/getcid.aw?v=2&uid=%E5%A5%BD%E6%97%B6%E6%B5%B7%E5%A4%96%E6%97%97%E8%88%B0%E5%BA%97&site=cntaobao&s=2&groupid=0&charset=utf-8" target="_blank">
+            <area shape="rect" coords="834,134,920,242" href="http://amos.alicdn.com/getcid.aw?v=2&uid=%E5%A5%BD%E6%97%B6%E6%B5%B7%E5%A4%96%E6%97%97%E8%88%B0%E5%BA%97&site=cntaobao&s=2&groupid=0&charset=utf-8" target="_blank">
+            <area shape="rect" coords="1291,15,1377,123" href="http://amos.alicdn.com/getcid.aw?v=2&uid=%E5%A5%BD%E6%97%B6%E6%B5%B7%E5%A4%96%E6%97%97%E8%88%B0%E5%BA%97&site=cntaobao&s=2&groupid=0&charset=utf-8" target="_blank">
+            <area shape="rect" coords="1199,16,1285,124" href="http://amos.alicdn.com/getcid.aw?v=2&uid=%E5%A5%BD%E6%97%B6%E6%B5%B7%E5%A4%96%E6%97%97%E8%88%B0%E5%BA%97&site=cntaobao&s=2&groupid=0&charset=utf-8" target="_blank">
+            <area shape="rect" coords="1109,17,1195,125" href="http://amos.alicdn.com/getcid.aw?v=2&uid=%E5%A5%BD%E6%97%B6%E6%B5%B7%E5%A4%96%E6%97%97%E8%88%B0%E5%BA%97&site=cntaobao&s=2&groupid=0&charset=utf-8" target="_blank">
+            <area shape="rect" coords="1018,17,1104,125" href="http://amos.alicdn.com/getcid.aw?v=2&uid=好时海外旗舰店&site=cntaobao&s=2&groupid=0&charset=utf-8" target="_blank">
+            <area shape="rect" coords="927,18,1013,126" href="http://amos.alicdn.com/getcid.aw?v=2&uid=%E5%A5%BD%E6%97%B6%E6%B5%B7%E5%A4%96%E6%97%97%E8%88%B0%E5%BA%97&site=cntaobao&s=2&groupid=0&charset=utf-8" target="_blank">
+            <area shape="rect" coords="923,139,1013,241" href="http://amos.alicdn.com/getcid.aw?v=2&uid=%E5%A5%BD%E6%97%B6%E6%B5%B7%E5%A4%96%E6%97%97%E8%88%B0%E5%BA%97&site=cntaobao&s=2&groupid=0&charset=utf-8" target="_blank" />
+            <area shape="rect" coords="836,18,922,126" href="http://amos.alicdn.com/getcid.aw?v=2&uid=%E5%A5%BD%E6%97%B6%E6%B5%B7%E5%A4%96%E6%97%97%E8%88%B0%E5%BA%97&site=cntaobao&s=2&groupid=0&charset=utf-8" target="_blank">
+            </map>
+        </div>
+        <div>
+        	<a name="M2"></a>
+            <img src="https://img.alicdn.com/imgextra/i1/2637981973/TB2fTWRfVXXXXcUXXXXXXXXXXXX_!!2637981973.jpg" alt=" 镇长推荐.jpg"/>
+          <div style="background:url(https://img.alicdn.com/imgextra/i2/2637981973/TB2_X1MfVXXXXb7XpXXXXXXXXXX_!!2637981973.jpg) fixed repeat;width:1920px;height:1133px;">
+                <div>
+                    <img src="https://img.alicdn.com/imgextra/i3/2637981973/TB2SGyVfVXXXXX5XpXXXXXXXXXX_!!2637981973.png" alt=" 镇长推荐2.jpg" usemap="#Hs2" border="0"/>
+                    <map name="Hs2" id="Hs2">
+                    <area shape="rect" coords="1652,17,1678,1134" href="#M1">
+                    <area shape="rect" coords="1627,18,1653,1135" href="#M2">
+                    <area shape="rect" coords="1602,13,1628,1130" href="#M3">
+                    <area shape="rect" coords="1577,11,1603,1128" href="#M4">
+                    <area shape="rect" coords="485,48,1442,535" href="https://detail.tmall.hk/hk/item.htm?id=522816007342" target="_blank" />
+                    <area shape="rect" coords="486,576,941,1122" href="https://detail.tmall.hk/hk/item.htm?id=522837553909" target="_blank" />
+                    <area shape="rect" coords="982,576,1448,1119" href="https://detail.tmall.hk/hk/item.htm?id=522565330943" target="_blank" />
+                    <area shape="rect" coords="207,7,397,1135" href="#M0">
+                    <area shape="rect" coords="1552,11,1578,1128" href="#M5">
+                    </map>
+                    
+                </div>
+          </div>
+        </div>
+        <div>
+        	<a name="M3"></a>
+            <img src="https://img.alicdn.com/imgextra/i2/2637981973/TB2SXqOfVXXXXXyXpXXXXXXXXXX_!!2637981973.jpg" alt=" 畅销零食.jpg"/>
+            <div style="background:url(https://img.alicdn.com/imgextra/i2/2637981973/TB2_X1MfVXXXXb7XpXXXXXXXXXX_!!2637981973.jpg) fixed repeat;height:1066px;width:1920px;">
+                <div>
+                    <img src="https://img.alicdn.com/imgextra/i1/2637981973/TB27k19fVXXXXaKXXXXXXXXXXXX_!!2637981973.png" alt=" 畅销零食2.jpg" usemap="#Hs3" border="0"/>
+                    <map name="Hs3" id="Hs3"><area shape="rect" coords="1650,2,1672,1061" href="#M1"><area shape="rect" coords="1626,-2,1648,1057" href="#M2"><area shape="rect" coords="1602,2,1624,1061" href="#M3"><area shape="rect" coords="1578,2,1600,1061" href="#M4">
+                      <area shape="rect" coords="472,17,1413,455" href="https://detail.tmall.hk/hk/item.htm?id=522621979473" target="_blank" />
+                      <area shape="rect" coords="471,462,935,1011" href="https://detail.tmall.hk/hk/item.htm?id=522837789739" target="_blank" />
+                      <area shape="rect" coords="981,464,1414,1012" href="https://detail.tmall.hk/hk/item.htm?id=522815423128" target="_blank" />
+                      <area shape="rect" coords="219,9,393,1060" href="#M0">
+                      <area shape="rect" coords="1554,2,1576,1061" href="#M5">
+                    </map>
+                </div>
+            </div>
+        </div>
+        <div>
+        	<a name="M4"></a>
+            <img src="https://img.alicdn.com/imgextra/i3/2637981973/TB24FeKfVXXXXalXpXXXXXXXXXX_!!2637981973.jpg" alt=" 烘培臻品.jpg"/>
+            <div style="background:url(https://img.alicdn.com/imgextra/i2/2637981973/TB2_X1MfVXXXXb7XpXXXXXXXXXX_!!2637981973.jpg) fixed repeat;height:1027px;;width:1920px;">
+                <div>
+                    <img src="https://img.alicdn.com/imgextra/i4/2637981973/TB2wYG2fVXXXXckXXXXXXXXXXXX_!!2637981973.png" alt=" 烘培臻品2.jpg" usemap="#Hs4" border="0"/>
+                    <map name="Hs4" id="Hs4"><area shape="rect" coords="1648,3,1673,1020" href="#M1"><area shape="rect" coords="1623,4,1648,1021" href="#M2"><area shape="rect" coords="1599,19,1624,1036" href="#M3"><area shape="rect" coords="1575,7,1600,1024" href="#M4">
+                      <area shape="rect" coords="491,27,1470,456" href="https://detail.tmall.hk/hk/item.htm?id=521995234409" target="_blank" />
+                      <area shape="rect" coords="492,462,952,1009" href="https://detail.tmall.hk/hk/item.htm?id=522836974824" target="_blank" />
+                      <area shape="rect" coords="971,462,1455,1007" href="https://detail.tmall.hk/hk/item.htm?id=522837022952" target="_blank" />
+                      <area shape="rect" coords="210,7,394,1022" href="#M0">
+                      <area shape="rect" coords="1551,3,1576,1020" href="#M5">
+                    </map>
+                </div>      
+            </div>
+        </div>
+      <div>
+        	<a name="M5"></a>
+            <img src="https://img.alicdn.com/imgextra/i2/2637981973/TB2mb5KfVXXXXazXpXXXXXXXXXX_!!2637981973.jpg" alt=" 沙芬伯格.jpg"/>
+            <div style="background:url(https://img.alicdn.com/imgextra/i2/2637981973/TB2_X1MfVXXXXb7XpXXXXXXXXXX_!!2637981973.jpg) fixed repeat;height:1206px;;width:1920px;">
+                <div>
+                    <img src="https://img.alicdn.com/imgextra/i2/2637981973/TB2iafXfVXXXXXJXXXXXXXXXXXX_!!2637981973.png" alt=" 沙芬伯格2.jpg" usemap="#Hs5" border="0"/>
+                    <map name="Hs5" id="Hs5"><area shape="rect" coords="1651,5,1679,1204" href="#M1"><area shape="rect" coords="1626,7,1651,1206" href="#M2"><area shape="rect" coords="1600,2,1627,1206" href="#M3"><area shape="rect" coords="1577,7,1601,1201" href="#M4">
+                      <area shape="rect" coords="481,22,949,574" href="https://detail.tmall.hk/hk/item.htm?id=522816355388" target="_blank" />
+                      <area shape="rect" coords="979,24,1419,573" href="https://detail.tmall.hk/hk/item.htm?id=522816395546" target="_blank" />
+                      <area shape="rect" coords="214,8,394,1203" href="#M0">
+                      <area shape="rect" coords="1553,7,1577,1207" href="#M5">
+                    </map>
+                </div>      
+            </div>
+      </div>
+        <img src="https://img.alicdn.com/imgextra/i4/2637981973/TB24MmKfVXXXXaPXpXXXXXXXXXX_!!2637981973.jpg" alt=" 底部.jpg" usemap="#Hs6" border="0"/>
+        <map name="Hs6" id="Hs6">
+          <area shape="rect" coords="1150,34,1357,176" href="#" />
+          <area shape="rect" coords="603,25,812,179" target="_blank" href="//favorite.taobao.com/popup/add_collection.htm?spm=a220o.1000855.1997427133.5.BOZfGg&id=129657536&itemid=129657536&itemtype=0&ownerid=175483984071bb89bb05f643d81a4106&scjjc=2&scene=taobao_shop">
+        </map>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

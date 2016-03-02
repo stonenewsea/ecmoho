@@ -1,0 +1,426 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+/*淘宝自定义模块是限制990宽度之内，这是更改淘宝自身的类名的属性值，是让990范围之外的图片显示*/
+.tshop-pbsm-shop-self-defined .skin-box-bd {
+    overflow: visible;
+}
+/*店招自定义模块，使其990范围之外的图片显示。*/
+.grid-m .tshop-pbsm-shop-custom-banner, .tshop-pbsm-shop-custom-banner {
+    overflow: visible;
+}
+
+.skin-box .skin-box-bd {
+    background: none;
+}
+/*淘宝两个自定义模块之间淘宝定义是相差10px;改为0px;*/
+.tshop-pbsm-shop-self-defined {
+    margin-bottom: 0px;
+}
+/*去掉热点的边框*/
+area {
+    outline: none;
+}
+
+.tshop-pbsm-shop-self-defined .skin-box-bd {
+    line-height: 0;
+}
+
+/*  绝对定位  */
+.pos-A {
+    position: absolute;
+}
+
+/* 相对定位  */
+.pos-R {
+    position: relative;
+}
+
+/*  左浮动  */
+.l-left {
+    float: left;
+}
+
+/*  右浮动  */
+.r-right {
+    float: right;
+}
+
+/*清除浮动*/
+.clear {
+    clear: both;
+}
+
+/*文本左中右对其*/
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+/*店招全屏*/
+.header {
+    width: 990px;
+    position: relative;
+}
+
+    .header .header-absolute {
+        width: 1920px;
+        position: absolute;
+        margin-left: -960px;
+        left: 50%;
+    }
+
+
+/* 全屏 */
+.wrap {
+    width: 990px;
+    position: relative;
+}
+
+    .wrap .wrap-absolute {
+        width: 1920px;
+        position: absolute;
+        margin-left: -960px;
+        left: 50%;
+    }
+
+/*店尾全屏*/
+.footer {
+    width: 990px;
+}
+
+    .footer .footer-absolute {
+        width: 1920px;
+        position: absolute;
+        margin-left: -475px;
+    }
+
+
+/*导航*/
+.header .header-absolute .nav {
+    background: #012545;
+    width: 1920px;
+    height: 30px;
+    overflow: hidden;
+}
+
+    .header .header-absolute .nav ul {
+        margin-left: 465px;
+    }
+
+        .header .header-absolute .nav ul li {
+            float: left;
+        }
+
+/*无序列表模块*/
+
+.list-style ul {
+    float: left;
+}
+
+    .list-style ul li a {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 25px;
+        font-family: 微软雅黑;
+    }
+
+    .list-style ul li {
+        text-align: center;
+    }
+
+        .list-style ul li a {
+            color: #fff;
+            -webkit-transition: color .5s ease;
+            -moz-transition: color .5s ease;
+            -o-transition: color .5s ease;
+            transition: color .5s ease;
+        }
+
+            .list-style ul li a:hover {
+                color: #ac3600;
+                text-decoration: underline;
+            }
+
+/*给定义列表实现水平显示效果*/
+.dl-horizontal {
+    width: 600px;
+    font-size: 14px;
+}
+
+    .dl-horizontal dt {
+        overflow: hidden;
+        clear: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .dl-horizontal dd {
+        text-indent: 10px;
+        margin-left: 0px;
+    }
+
+dl {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+dt,
+dd {
+    line-height: 1.42857143;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0;
+}
+
+/*正常两张图片切换*/
+.normal-first {
+    position: relative;
+    cursor: pointer;
+}
+
+.normal-final {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.normal-first:hover .normal-final {
+    opacity: 1;
+}
+
+/*鼠标滑过渐隐显示第二张图片*/
+.fadeout-first {
+    position: relative;
+    cursor: pointer;
+}
+
+.fadeout-final {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+
+.fadeout-first:hover .fadeout-final {
+    opacity: 1;
+}
+
+/*鼠标滑过翻滚效果*/
+.roll-effect ul li a {
+    display: block;
+    height: 30px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+.roll-effect ul li.roll_one a {
+    background: url(TB2CcvXaXXXXXcDXXXXXXXXXXXX_!!1114884337.png) no-repeat;
+    width: 130px;
+}
+
+.roll-effect ul li a:hover {
+    background-position: 0 -30px;
+}
+
+
+/*搜索模块*/
+.btn-default {
+    border: none;
+    float: left;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+}
+
+.input-search {
+    width: 119px;
+    height: 21px;
+    text-indent: 10px;
+    color: #797979;
+    line-height: 21px;
+    background: url(input.png)no-repeat;
+}
+
+.btn-search {
+    background: url(btn.png) no-repeat;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+/*开灯关灯效果*/
+.switch-effect ul li {
+    float: left;
+    width: 1201px;
+    height: 146px;
+}
+
+    .switch-effect ul li a {
+        display: block;
+        float: left;
+        width: 195px;
+        height: 146px;
+    }
+
+    .switch-effect ul li img {
+        opacity: 1;
+    }
+
+    .switch-effect ul li:hover img {
+        opacity: 0.5;
+    }
+
+    .switch-effect ul li a:hover img {
+        opacity: 1;
+    }
+
+
+
+ul, input {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+ .quanping {
+    width: 990px;
+    position: relative;
+}
+.quanping .absolute {
+    width: 1920px;
+    position: absolute;
+    margin-left: -960px;
+    left: 50%;
+}
+.fl {float:left}
+.fr {float:right}
+.m_t19 {margin-top:-19px;}
+</style>
+</head>
+
+<body>
+<div class="header" style="height:150px;line-height:0px;">
+	<div class="header-absolute" style="left:0;margin-left:0">
+    	<div style="width:1920px;height:120px;overflow:hidden;">
+			<img src="https://img.alicdn.com/imgextra/i3/1664851178/TB2m0V4gFXXXXbAXpXXXXXXXXXX_!!1664851178.jpg" alt=" top1.jpg" class="fl" />
+            <img src="https://img.alicdn.com/imgextra/i2/1664851178/TB21Q1bgFXXXXXaXpXXXXXXXXXX_!!1664851178.jpg" alt=" top2.jpg" usemap="#Map" class="fl"/>
+            <map name="Map">
+              <area shape="rect" target="_blank" coords="219,69,340,99" href="https://favorite.taobao.com/popup/add_collection.htm?spm=a1z10.1-b.w5001-12394747552.8.Ue2i7g&id=104188457&itemid=104188457&itemtype=0&ownerid=0c71575ff11d66d92533a0f15bfb10ac&scjjc=2&scene=taobao_shop">
+            </map>
+            <img src="https://img.alicdn.com/imgextra/i1/1664851178/TB20BihgFXXXXboXXXXXXXXXXXX_!!1664851178.jpg" alt=" top3.jpg" class="fl"/>
+		</div>
+        <div style="height:30px;background:#fece48;">
+        	<div style="width:1267px;margin:0 auto;">
+                <a target="_blank" href="https://naturalelements.tmall.com/" class="fl" style="margin-left:62px;"><img src="https://img.alicdn.com/imgextra/i3/1664851178/TB2euamgFXXXXaEXXXXXXXXXXXX_!!1664851178.jpg" alt=" menu1.jpg"/></a>
+                <a target="_blank" href="https://naturalelements.tmall.com/campaign-3731-0.htm" class="fl m_t19"><img src="https://img.alicdn.com/imgextra/i2/1664851178/TB2v91fgFXXXXbPXXXXXXXXXXXX_!!1664851178.jpg" alt=" menu2.jpg"/></a>
+                <a target="_blank" href="https://naturalelements.tmall.com/category.htm?spm=a1z10.1-b.w5001-12394747552.3.TfqhgM&search=y&scene=taobao_shop" class="fl" ><img src="https://img.alicdn.com/imgextra/i3/1664851178/TB2LmqhgFXXXXa7XXXXXXXXXXXX_!!1664851178.jpg" alt=" menu3.jpg"/></a>
+                <a target="_blank" href="https://naturalelements.tmall.com/category-734966264.htm?spm=a1z10.5-b.w4010-9996248837.7.Szuqw5&search=y&catName=%B0%AE%C3%C0%C5%AE%C8%CB%C7%F8#bd" class="fl"><img src="https://img.alicdn.com/imgextra/i4/1664851178/TB2wVWggFXXXXbRXXXXXXXXXXXX_!!1664851178.jpg" alt=" menu4.jpg"/></a>
+                <a target="_blank" href="https://naturalelements.tmall.com/category-734966265.htm?spm=a1z10.5-b.w4010-9996248837.11.aH7xVk&search=y&catName=%CE%AC%CB%FB%D3%AA%D1%F8%CB%D8#bd" class="fl"><img src="https://img.alicdn.com/imgextra/i4/1664851178/TB2J51hgFXXXXbAXXXXXXXXXXXX_!!1664851178.jpg" alt=" menu5.jpg"/></a>
+                <a target="_blank" href="https://naturalelements.tmall.com/category-734966263.htm?spm=a1z10.5-b.w4010-9996248837.14.JY9hNB&search=y&catName=%B9%D8%B0%AE%BC%D2%C8%CB%C7%F8#bd" class="fl"><img src="https://img.alicdn.com/imgextra/i2/1664851178/TB2EUJ0gFXXXXaNXpXXXXXXXXXX_!!1664851178.jpg" alt=" menu6.jpg"/></a>
+                <a target="_blank" href="http://naturalelements.tmall.com/p/rd139182.htm" class="fl"><img src="https://img.alicdn.com/imgextra/i4/1664851178/TB2bsF_gFXXXXXeXpXXXXXXXXXX_!!1664851178.jpg" alt=" menu7.jpg"/></a>
+                <a target="_blank" href="https://angli.tmall.com/" class="fl"><img src="https://img.alicdn.com/imgextra/i4/1664851178/TB2qBV0gFXXXXaVXpXXXXXXXXXX_!!1664851178.jpg" alt=" menu8.jpg"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="quanping" style="height:9964px;">
+	<div class="absolute">
+    	<img src="https://img.alicdn.com/imgextra/i2/1664851178/TB2c_V1gFXXXXcgXpXXXXXXXXXX_!!1664851178.jpg" alt=" banner.jpg"/>
+        <img src="https://img.alicdn.com/imgextra/i3/1664851178/TB27zurgFXXXXXcXXXXXXXXXXXX_!!1664851178.jpg" alt=" img1.jpg" usemap="#Map2" />
+      <map name="Map2">
+          <area shape="rect" target="_blank" coords="832,194,992,385" href="https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1664851178&activityId=722bd09f20a74a29bca447aff02ad712">
+          <area shape="rect" target="_blank" coords="1043,195,1210,384" href="https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1664851178&activityId=8278702749264968818b6b71cedc3548">
+          <area shape="rect" target="_blank" coords="1251,195,1421,385" href="https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1664851178&activityId=d8bf6f70ea694f30a2edc5c20acd9e1a">
+          <area shape="circle" target="_blank" coords="548,393,116" href="https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1664851178&activityId=dec9fc7ed7fe4f7a86570029caf1ceff">
+          <area shape="circle" target="_blank" coords="707,256,84" href="https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=1664851178&activityId=995dd9f8773d430f95c7e475b2c9b5a8">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i3/1664851178/TB2oIungFXXXXXhXXXXXXXXXXXX_!!1664851178.jpg" alt=" img2.jpg" usemap="#Map3"/>
+      <map name="Map3">
+          <area shape="rect" target="_blank" coords="360,81,774,602" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.3VVd9N&id=18976357257">
+          <area shape="rect" target="_blank" coords="809,84,1225,602" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.3npeRR&id=18637897123">
+          <area shape="rect" target="_blank" coords="1239,84,1660,602" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.eKf4Wx&id=36727792033">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i1/1664851178/TB2o340gFXXXXbTXpXXXXXXXXXX_!!1664851178.jpg" alt=" img3.jpg"/>
+        <img src="https://img.alicdn.com/imgextra/i3/1664851178/TB2ttCdgFXXXXc0XXXXXXXXXXXX_!!1664851178.jpg" alt=" img4.jpg" usemap="#Map4"/>
+        <map name="Map4">
+          <area shape="rect" target="_blank" coords="526,25,1485,553" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.vLt7fL&id=19616729689">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i2/1664851178/TB2G1d6gFXXXXaCXpXXXXXXXXXX_!!1664851178.jpg" alt=" img5.jpg" usemap="#Map5"/>
+        <map name="Map5">
+          <area shape="rect" target="_blank" coords="528,33,1476,569" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.MwbgXg&id=25490780313">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i2/1664851178/TB2ME43gFXXXXboXpXXXXXXXXXX_!!1664851178.jpg" alt=" img6.jpg"/>
+        <img src="https://img.alicdn.com/imgextra/i3/1664851178/TB2Z8qqgFXXXXXrXXXXXXXXXXXX_!!1664851178.jpg" alt=" img7.jpg" usemap="#Map6"/>
+        <map name="Map6">
+          <area shape="rect" target="_blank" coords="388,14,932,755" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.3VVd9N&id=18976357257">
+          <area shape="rect" target="_blank" coords="971,15,1508,754" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.NV0VFX&id=20787047298">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i1/1664851178/TB2d3SkgFXXXXbbXXXXXXXXXXXX_!!1664851178.jpg" alt=" img8.jpg" usemap="#Map7"/>
+        <map name="Map7">
+          <area shape="rect" target="_blank" coords="395,22,772,566" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.Soxzua&id=18637741063">
+          <area shape="rect" target="_blank" coords="789,22,1176,568" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.38gn89&id=18694449235">
+          <area shape="rect" target="_blank" coords="1195,22,1590,569" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.bAVsra&id=26185844033">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i3/1664851178/TB2O49ngFXXXXafXXXXXXXXXXXX_!!1664851178.jpg" alt=" img9.jpg"/>
+        <img src="https://img.alicdn.com/imgextra/i2/1664851178/TB2JWWhgFXXXXbiXXXXXXXXXXXX_!!1664851178.jpg" alt=" img10.jpg" usemap="#Map8"/>
+        <map name="Map8">
+          <area shape="rect" target="_blank" coords="457,13,932,549" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.lpFgi6&id=18599630154">
+          <area shape="rect" target="_blank" coords="972,14,1467,552" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.lpFgi6&id=20860743251">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i1/1664851178/TB2RUp7gFXXXXX0XpXXXXXXXXXX_!!1664851178.jpg" alt=" img11.jpg" usemap="#Map9"/>
+        <map name="Map9">
+          <area shape="rect" target="_blank" coords="458,27,943,588" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.lpFgi6&id=18919361865">
+          <area shape="rect" target="_blank" coords="965,28,1466,593" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.CazLRS&id=26071716742">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i3/1664851178/TB2dEOigFXXXXaPXXXXXXXXXXXX_!!1664851178.jpg" alt=" img12.jpg"/>
+        <img src="https://img.alicdn.com/imgextra/i2/1664851178/TB2gweqgFXXXXXmXXXXXXXXXXXX_!!1664851178.jpg" alt=" img13.jpg" usemap="#Map10"/>
+        <map name="Map10">
+          <area shape="rect" target="_blank" coords="461,14,951,576" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.yyYGzf&id=21238203259">
+          <area shape="rect" target="_blank" coords="989,13,1487,574" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.QnxxX4&id=25444468346">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i4/1664851178/TB24m5dgFXXXXb1XXXXXXXXXXXX_!!1664851178.jpg" alt=" img14.jpg" usemap="#Map11"/>
+        <map name="Map11">
+          <area shape="rect" target="_blank" coords="460,17,953,597" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.9p4WCF&id=18893994749">
+          <area shape="rect" target="_blank" coords="986,16,1484,604" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.sPbC46&id=18615805460">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i2/1664851178/TB2AKX.gFXXXXXuXpXXXXXXXXXX_!!1664851178.jpg" alt=" img15.jpg"/>
+        <img src="https://img.alicdn.com/imgextra/i1/1664851178/TB2LMR2gFXXXXbOXpXXXXXXXXXX_!!1664851178.jpg" alt=" img16.jpg" usemap="#Map12"/>
+        <map name="Map12">
+          <area shape="rect" target="_blank" coords="492,10,1392,311" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.Mb7Iow&id=36935314682">
+          <area shape="rect" target="_blank" coords="495,322,1430,629" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.hs2oJ0&id=36956446568">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i4/1664851178/TB2GraogFXXXXakXXXXXXXXXXXX_!!1664851178.jpg" alt=" img17.jpg" usemap="#Map13"/>
+        <map name="Map13">
+          <area shape="rect" target="_blank" coords="502,31,1302,358" href="https://detail.tmall.com/item.htm?spm=0.0.0.0.nOpsnV&id=36939699004">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i2/1664851178/TB2FyKXgFXXXXczXXXXXXXXXXXX_!!1664851178.jpg" alt=" bottom.jpg" usemap="#Map14"/>
+        <map name="Map14">
+          <area shape="rect" coords="811,525,1109,764" href="#">
+        </map>
+    </div>
+</div>
+</body>
+</html>
