@@ -1,0 +1,694 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	.bg-1{
+		width:1920px;
+		height:253px;
+		position:relative;
+		background:url(https://img.alicdn.com/imgextra/i1/410111245/TB2Z1iegFXXXXaSXpXXXXXXXXXX-410111245.jpg) 0 0 no-repeat;
+	}
+.zhezhao{
+		width:811px;
+		height:136px;
+		position:absolute;
+		left:555px;
+		top:40px;
+	}
+.zhezhao li{
+		float:left;
+		width:104px;
+		height:133px;
+		margin-right:72px;
+	}
+.zhezhao li .po1{
+		position:absolute;
+		left:176px;
+		top:0;
+		opacity:0;
+		transition: all 0.3s;
+	}
+	.zhezhao li .po1:hover{
+		opacity:1;
+	}
+.zhezhao li .po2{
+		position:absolute;
+		left:352px;
+		top:0;
+		opacity:0;
+		transition: all 0.3s;
+	}
+.zhezhao li .po2:hover{
+		opacity:1;
+	}
+.zhezhao li .po3{
+		position:absolute;
+		left:528px;
+		top:0;
+		opacity:0;
+		transition: all 0.3s;
+	}
+.zhezhao li .po3:hover{
+		opacity:1;
+	}
+.zhezhao li .po4{
+		position:absolute;
+		left:704px;
+		top:0;
+		opacity:0;
+		transition: all 0.3s;
+	}
+.zhezhao li .po4:hover{
+		opacity:1;
+	}
+	.bg-2{
+		width:1920px;
+		height:164px;
+		background:url(https://img.alicdn.com/imgextra/i1/410111245/TB2nOGxgFXXXXa1XXXXXXXXXXXX-410111245.jpg) 0 0 no-repeat;
+		position:relative;
+	}
+	.bg-2 .zhezhao{
+		    width: 811px;
+    height: 136px;
+    position: absolute;
+    left: 555px;
+    top: 10px;
+	}
+	.bg-2 .zhezhao li .po1{
+		position:absolute;
+		left:0px;
+		top:0;
+		opacity:0;
+		transition: all 0.3s;
+	}
+	.bg-2 .zhezhao li .po1:hover{
+	
+		opacity:1;
+	}
+	.bg-2 .zhezhao li .po2{
+		position:absolute;
+		left:352px;
+		top:0;
+		opacity:0;
+		transition: all 0.3s;
+	}
+	.bg-2 .zhezhao li .po2:hover{
+		opacity:1;
+	}
+	.bg-2 .zhezhao li .po3{
+		position:absolute;
+		left:528px;
+		top:0;
+		opacity:0;
+		transition: all 0.3s;
+	}
+	.bg-2 .zhezhao li .po3:hover{
+		opacity:1;
+	}
+	.bg-2 .zhezhao li .po4{
+		position:absolute;
+		left:704px;
+		top:0;
+		opacity:0;
+		transition: all 0.3s;
+	}
+	.bg-2 .zhezhao li .po4:hover{
+		opacity:1;
+	}
+	.bg-3{
+		width:1920px;
+		height:163px;
+		position:relative;
+		background:url(https://img.alicdn.com/imgextra/i4/410111245/TB2ZwCrgFXXXXbCXXXXXXXXXXXX-410111245.jpg) 0 0 no-repeat;
+	}
+	.bg-3 .zhezhao{
+		top:12px;
+		left:555px;
+	}
+	.bg-3 .zhezhao li .po1{
+		left:0;
+	}
+	.bg-3 .zhezhao li .po2{
+		left:176px;
+	}
+	.bg-4{
+		width:1920px;
+		height:238px;
+		position:relative;
+		background:url(https://img.alicdn.com/imgextra/i4/410111245/TB2pTKggFXXXXakXpXXXXXXXXXX-410111245.jpg) 0 0 no-repeat;
+	}
+	.bg-4 .zhezhao{
+		left:555px;
+		top:42px;
+	}
+	.bg-4 .zhezhao li .po1{
+		left:0;
+		top:0;
+	}
+	.bg-4 .zhezhao li .po2{
+		left:176px;
+		top:0;
+	}
+	.bg-4 .zhezhao li .po3{
+		left:352px;
+		top:0;
+	}
+	.bg-5{
+		width:1920px;
+		height:218px;
+		position:relative;
+		background:url(https://img.alicdn.com/imgextra/i2/410111245/TB2ACSCgFXXXXXfXXXXXXXXXXXX-410111245.jpg) 0 0 no-repeat;
+	}
+	.bg-5 .zhezhao{
+		top:30px;
+	}
+	.bg-5 .zhezhao li .po1{
+		left:0;
+	}
+	.bg-5 .zhezhao li .po2{
+		left:176px;
+	}
+	.bg-5 .zhezhao li .po3{
+		left:352px;
+	}
+	.bg-5 .zhezhao li .po4{
+		left:528px;
+	}
+	.bg-4 .tp{
+		margin-top: -2px;
+	}
+
+
+	.toub{
+		width:1920px;
+		height:150px;
+		position:relative;
+	}
+	.toub .img1{
+		position:absolute;
+		left:399px;
+		top:0;
+	}
+	.toub .img2{
+		position:absolute;
+		left:1104px;
+		top:121px;
+	}
+	.toub .img3{
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	.daoh- ul {
+		position:relative;
+		left:462px;
+		top:-29px;
+		background:red;
+	}
+	.daoh- ul li a{
+		float:left;
+	}
+	.daoh- .img1{
+		display:none;
+		position:absolute;
+		transition: all 0.3s linear;
+		transition: all 0.3s linear;
+		
+	}
+	.daoh- .l1:hover .img1{
+		display:block;
+	}
+	.daoh- .l1 a{
+		width:96px;
+		height:29px;
+	}
+	.daoh- .l2 a{
+		width:106px;
+		height:29px;
+	}
+	.daoh- .l3 a{
+		width:68px;
+		height:29px;
+	}
+	.daoh- .l4 a{
+		width:82px;
+		height:29px;
+	}
+	.daoh- .l5 a{
+		width:93px;
+		height:29px;
+	}
+
+	.daoh- .img2 {
+		position:absolute;
+		display:none;
+		transition: all 0.3s linear;
+		transition: all 0.3s linear;
+		
+	}
+	.daoh- .l2:hover .img2{
+		display:block;
+	}
+	.daoh- .img3{
+		position:absolute;
+		display:none;
+		transition: all 0.3s linear;
+		transition: all 0.3s linear;
+		
+	}
+	.daoh- .l3:hover .img3{
+		display:block;
+	}
+	.daoh- .img4{
+		position:absolute;
+		display:none;
+		transition: all 0.3s linear;
+		transition: all 0.3s linear;
+		
+	}
+	.daoh- .l4:hover .img4{
+		display:block;
+	}
+	.daoh- .img5{
+		position:absolute;
+		display:none;
+		transition: all 0.3s linear;
+		transition: all 0.3s linear;
+		
+	}
+	.daoh- .l5:hover .img5{
+		display:block;
+	}
+	.daoh- .l1{
+		position:relative;
+	}
+		
+
+.daoh- .l2{
+		position:relative;
+	}
+	.daoh- .l3{
+		position:relative;
+	}
+		.daoh- .l4{
+		position:relative;
+	}
+		.daoh- .l5{
+		position:relative;
+	}
+	
+
+	.daoh-1{
+		width:1920px;
+		height:29px;
+		position:absolute;
+		top:122px;
+		left:0;
+	}
+	.daoh-1 ul{
+		width:990px;
+		height:29px;
+		position:absolute;
+		left:462px;
+		top:0;
+	}
+
+	.daoh-1 .l1 a{
+		width:96px;
+		height:28px;
+	}
+	.daoh-1 .l1 a img{
+		opacity:0;
+		transition: all 0.3s linear;
+	}
+	.daoh-1 .l2 a{
+		width:106px;
+		height:28px;
+	}
+	.daoh-1 .l3 a{
+		width:68px;
+		height:28px;
+	}
+	.daoh-1 .l4 a{
+		width:82px;
+		height:28px;
+	}
+	img{
+		display:block;
+	}
+	.daoh-1 .l5 a{
+		width:93px;
+		height:28px;
+	}
+	.daoh-1 li{
+		float:left;
+	}
+	.daoh-1 .l1 a:hover img{
+		opacity:1;
+	}
+</style>
+<body>
+	<div class="quanping" style='height:150px'>
+    	<div class="absolute">
+    	<div class='toub'>
+    		<img  class='img3' src="https://img.alicdn.com/imgextra/i3/410111245/TB2q2mTgFXXXXXxXpXXXXXXXXXX-410111245.jpg" alt="" usemap="#Mapdecf" border="0" />
+          <map name="Mapdecf" id="Mapdecf">
+              <area shape="rect" coords="755,15,945,102" href="//ju.taobao.com/tg/brand_items.htm?act_sign_id=11101157" target="_blank" />
+              <area shape="rect" coords="985,11,1250,112" href="https://detail.tmall.com/item.htm?spm=a1z10.1-b.w5001-4319753981.14.GBjFDY&amp;id=22827364621&amp;abbucket=_AB-M32_B14&amp;acm=03054.1003.1.356972&amp;aldid=Vqgq5j2V&amp;abtest=_AB-LR32-PV32_1856&amp;scm=1003.1.03054.13_22827364621_356972&amp;pos=2&amp;scene=taobao_shop" target="_blank" />
+              <area shape="rect" coords="1271,5,1547,121" href="https://detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-6064162405.3.GBjFDY&amp;id=41355316781&amp;tracelog=jubuybigpic&amp;scene=taobao_shop" target="_blank" />
+              <area shape="rect" coords="1009,124,1097,147" href="//ju.taobao.com/tg/brand_items.htm?act_sign_id=11101157" target="_blank" />
+              <area shape="rect" coords="911,126,1002,150" href="http://eshophealth.tmall.com/p/rd718098.htm" target="_blank" />
+          </map>
+			<img class='img1' src="https://img.alicdn.com/imgextra/i4/410111245/TB2sUSEgFXXXXbYXpXXXXXXXXXX-410111245.gif" alt=" TB2pRL8eXXXXXcyXpXXXXXXXXXX-410111245.gif"/>
+			<a href="http://eshophealth.tmall.com/campaign-3731-4.htm" target="_blank" ><img class='img2' src="https://img.alicdn.com/imgextra/i1/410111245/TB2E5SPgFXXXXczXXXXXXXXXXXX-410111245.gif" alt=" 设置帧延迟.gif"/></a>
+    	</div>
+    	<div class='daoh-1'>
+    		<ul>
+				<Li class='l1'><a href="https://eshophealth.tmall.com/?spm=a220o.1000855.w5001-4319753981.3.RzNf6Z&scene=taobao_shop"  target="_blank" ><img  class='img1'  src="https://img.alicdn.com/imgextra/i3/410111245/TB2_XTggFXXXXanXXXXXXXXXXXX-410111245.jpg" alt=" 店招3_03.jpg"/></a></Li>
+				<Li class='l2'><a href="https://eshophealth.tmall.com/search.htm?spm=a1z10.1-b.w5001-4319753981.4.nCcMCk&scene=taobao_shop" target="_blank" ><img class='img2' src="https://img.alicdn.com/imgextra/i2/410111245/TB2gUyPgFXXXXbJXpXXXXXXXXXX-410111245.jpg" alt=" 店招3_04.jpg"/></a></Li>
+				<Li class='l3'><a href="https://eshophealth.tmall.com/search.htm?spm=a220o.1000855.w5001-4319753981.5.RzNf6Z&scene=taobao_shop" target="_blank" ><img class='img3' src="https://img.alicdn.com/imgextra/i3/410111245/TB2tjO_gFXXXXbPXXXXXXXXXXXX-410111245.jpg" alt=" 店招3_05.jpg"/></a></Li>
+				<Li class='l4'><a href="https://eshophealth.tmall.com/search.htm?spm=a1z10.3-b.w5001-4319753981.6.UImjUA&orderType=&viewType=grid&keyword=%B8%C6%B6%FB%C6%E6&lowPrice=&highPrice=&scene=taobao_shop" target="_blank" ><img class='img4' src="https://img.alicdn.com/imgextra/i2/410111245/TB2_fCJgFXXXXcMXpXXXXXXXXXX-410111245.jpg" alt=" 店招3_06.jpg"/></a></Li>
+				<Li class='l5'><a href="https://eshophealth.tmall.com/category-1104356507.htm?spm=a1z10.3-b.w5001-4319753981.7.UImjUA&tsearch=y&scene=taobao_shop#TmshopSrchNav" target="_blank" ><img class='img5' src="https://img.alicdn.com/imgextra/i1/410111245/TB28S1UgFXXXXXLXpXXXXXXXXXX-410111245.jpg" alt=" 店招3_07.jpg"/></a></Li>
+			</ul>
+    	</div>
+		<div class="wp_left dingwei" style="width:250px;height:29px;position:absolute;right: 461px;top:121px">
+    <div class="dingwei" style="left:10px;top:5px;">
+        <form name="SearchForm" action="//eshophealth.tmall.com/search.htm?scene=taobao_shop" method="post" target="_blank">
+            <input style="margin:0px;padding:0px;border:0;width:100px;height:19px;color:#000;line-height:19px;float:left;outline:none;background-color:transparent;border-radius:0;text-indent:18px;background:url(//gdp.alicdn.com/imgextra/i1/410111245/TB2H.CUeXXXXXaHXXXXXXXXXXXX-410111245.png) no-repeat;" value=" " name="keyword">
+            <button style="background:url(//gdp.alicdn.com/imgextra/i1/410111245/TB2rtaweXXXXXbhXpXXXXXXXXXX-410111245.png) no-repeat;border:0;margin:0px;padding:0px;width:29px;height:19px;float:left;cursor:pointer;" type="submit"></button>
+            <input value="" name="userId" type="hidden">
+            <input value="http://eshophealth.tmall.com/" name="shopId" type="hidden">
+            <input value="" name="view_type" type="hidden">
+            <input value="" name="order_type" type="hidden">
+            <input value="y" name="search" type="hidden"> </form>
+    </div> <a target="_blank" href="//detail.tmall.com/item.htm?spm=a1z10.4-b.w5003-11816556485.41.f8verl&id=41355316781&tracelog=jubuybigpic&scene=taobao_shop" class="dingwei sc" style="left:150px;top:5px;padding-left:25px;font-size:12px;height:21px;line-height:21px;background:url(//gdp.alicdn.com/imgextra/i2/410111245/TB2jqWveXXXXXceXpXXXXXXXXXX-410111245.png) no-repeat;color:#FFF;">善存150粒</a> 
+</div>
+		</div>
+	</div>
+		<div class="wrap" style="height:1765px;">
+	<div class="wrap-absolute">
+		<div class="wpheader">
+			 <img src="https://gdp.alicdn.com/imgextra/i3/410111245/TB2TurBgpXXXXb2XpXXXXXXXXXX-410111245.jpg" alt=" strategy.jpg" />
+		</div>
+		<div class="mystage" style="background:url(https://gdp.alicdn.com/imgextra/i1/410111245/TB28QdUgFXXXXXoXpXXXXXXXXXX-410111245.jpg) no-repeat;">
+			<div class="stagemodule">
+				 <i class="logo11"><img src="https://gdp.alicdn.com/imgextra/i4/410111245/TB2I8_ygpXXXXceXpXXXXXXXXXX-410111245.png" alt=" 11logo.png" /></i> <i class="carnival"><img src="https://gdp.alicdn.com/imgextra/i1/410111245/TB2PSnPgpXXXXXeXpXXXXXXXXXX-410111245.png" alt=" carnival.png" /></i> <i class="high"><img src="https://gdp.alicdn.com/imgextra/i4/410111245/TB2FhDBgpXXXXbPXpXXXXXXXXXX-410111245.png" alt=" high.png" /></i> <i class="product" style="left:597px;top:479px;"><img src="https://gdp.alicdn.com/imgextra/i2/410111245/TB2gUJvgFXXXXXBXXXXXXXXXXXX-410111245.png" alt=" 产品9.png" usemap="#Map" /> <map name="Map"> <area coords="19,107,129,376" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.44.vNWSWi&amp;id=35423233081&amp;tracelog=jubuybigpic&amp;scene=taobao_shop" target="_blank" /> <area coords="133,66,276,409" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.53.vNWSWi&amp;id=19806049264&amp;tracelog=jubuybigpic&amp;scene=taobao_shop" target="_blank" /> <area coords="276,33,478,421" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.41.vNWSWi&amp;id=41355316781&amp;tracelog=jubuybigpic&amp;scene=taobao_shop" target="_blank" /> <area coords="478,64,601,428" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.42.vNWSWi&amp;id=22827364621&amp;abbucket=_AB-M32_B9&amp;acm=03054.1003.1.291757&amp;aldid=Ek17jYyb&amp;abtest=_AB-LR32-PR32&amp;scm=1003.1.03054.13_22827364621_291757&amp;pos=1&amp;scene=taobao_shop" target="_blank" /> <area coords="601,112,708,381" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.55.vNWSWi&amp;id=17545467320&amp;tracelog=jubuybigpic&amp;scene=taobao_shop" target="_blank" /> </map> </i> <i class="p-stage"><img src="https://gdp.alicdn.com/imgextra/i2/410111245/TB2mOP7gpXXXXXjXXXXXXXXXXXX-410111245.png" alt=" arena.png" /></i> <i class="railing-left"><img src="https://gdp.alicdn.com/imgextra/i4/410111245/TB2BrfKgpXXXXafXpXXXXXXXXXX-410111245.png" alt=" railing_01.png" /></i> <i class="railing-right"><img src="https://gdp.alicdn.com/imgextra/i4/410111245/TB2_crxgpXXXXcRXpXXXXXXXXXX-410111245.png" alt=" railing_03.png" /></i> <i class="salepromotion_01"><img src="https://gdp.alicdn.com/imgextra/i4/410111245/TB298Y7gpXXXXXhXXXXXXXXXXXX-410111245.png" alt=" salepromotion_01.png" usemap="#Maprer4g" border="0" />
+                 <map name="Maprer4g" id="Maprer4g">
+                   <area shape="poly" coords="14,25,247,90,294,356,86,302" href="https://favorite.shopmodule.jaeapp.com/?sid=61514269" target="_blank" />
+                 </map>
+				 </i> <i class="salepromotion_02"> <img src="https://gdp.alicdn.com/imgextra/i3/410111245/TB2oST3gpXXXXXtXXXXXXXXXXXX-410111245.png" alt=" salepromotion_02.png" /> <img src="https://gdp.alicdn.com/imgextra/i4/410111245/TB20ueHgFXXXXanXXXXXXXXXXXX-410111245.gif" alt=" 大转盘_03.gif" usemap="#Map3" class="zhuan" border="0" />
+                 <map name="Map3" id="Map3">
+                   <area shape="rect" coords="5,4,246,239" href="#ida1" />
+                 </map>
+                 </i> <i class="salepromotion_03"><img src="https://gdp.alicdn.com/imgextra/i4/410111245/TB2.Xj0gpXXXXbbXXXXXXXXXXXX-410111245.png" alt=" salepromotion_03.png" usemap="#Map2" border="0" />
+                 <map name="Map2" id="Map2">
+                   <area shape="poly" coords="89,89,321,22,247,305,44,352" href="http://bangpai.taobao.com/group/thread/15026065-314150639.htm" target="_blank" />
+                 </map>
+				 </i> <i class="light_03" style="display:none;"><img src="https://gdp.alicdn.com/imgextra/i4/410111245/TB2hTbJgpXXXXaqXpXXXXXXXXXX-410111245.png" alt=" light_03.png" /></i> <i class="light_01" style="display:none;"><img src="https://gdp.alicdn.com/imgextra/i1/410111245/TB24OjPgpXXXXcHXXXXXXXXXXXX-410111245.png" alt=" light_01.png" /></i> <i class="theme"><img src="https://gdp.alicdn.com/imgextra/i1/410111245/TB2A6D0gpXXXXaOXXXXXXXXXXXX-410111245.png" alt=" theme.png" /></i> <i class="counttime">
+				<div class="dingwei" style="width:150px;height:45px;line-height:45px;top:101px;left:40px;">
+					<div class="J_TWidget" data-widget-config="{&quot;endTime&quot;: &quot;2015-11-11 00:00:00&quot;,&quot;interval&quot;: 1000, &quot;timeRunCls&quot;: &quot;.ks-countdown-run&quot;, &quot;timeUnitCls&quot;:{&quot;d&quot;: &quot;.ks-d&quot;,&quot;h&quot;: &quot;.ks-h&quot;,&quot;m&quot;: &quot;.ks-m&quot;,&quot;s&quot;: &quot;.ks-s&quot;, &quot;i&quot;: &quot;.ks-i&quot;},&quot;minDigit&quot;: 1,&quot;timeEndCls&quot;: &quot;.ks-countdown-end&quot;}" data-widget-type="Countdown">
+						<div class="ks-countdown-run">
+							<div class="dingwei" style="width:60px;height:45px;overflow:hidden;text-align:right;left:47px;">
+								<div style="float:right;text-align:right;font:bold 28px arial;color:#FFF;width:140px;letter-spacing:11px;font-weight:bold;">
+									 <span>00</span> <span style="float:right;" class="ks-d">00</span>
+								</div>
+							</div>
+							<div class="dingwei" style="width:60px;height:45px;overflow:hidden;text-align:right;left:127px;">
+								<div style="float:right;text-align:right;font:bold 28px arial;color:#FFF;width:140px;letter-spacing:11px;font-weight:bold;">
+									 <span>00</span> <span style="float:right;" class="ks-h">00</span>
+								</div>
+						</div>
+							<div class="dingwei" style="width:60px;height:45px;overflow:hidden;text-align:right;left:233px;">
+								<div style="float:right;text-align:right;font:bold 28px arial;color:#FFF;width:140px;letter-spacing:11px;font-weight:bold;">
+									 <span>00</span> <span style="float:right;" class="ks-m">00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				 </i> <i class="hit_l_btn"> <a href="//taoquan.taobao.com/coupon/unify_apply.htm?sellerId=410111245&amp;activityId=7aea9ec5026e4dada47cef523629e0e8&amp;scene=taobao_shop" target="_blank"> <span class="dingwei dis" style="left:0px;top:0px;z-index:2;"><img src="https://gdp.alicdn.com/imgextra/i1/410111245/TB2Hnp5gFXXXXa8XXXXXXXXXXXX-410111245.gif" alt=" n01.gif" /></span> <span class="dingwei" style="left:0px;top:0px;z-index:1;"><img src="https://gdp.alicdn.com/imgextra/i4/410111245/TB29fXMgFXXXXasXpXXXXXXXXXX-410111245.jpg" alt=" 01.jpg" /></span> </a> </i> <i class="hit_m_btn"> <a href="//taoquan.taobao.com/coupon/unify_apply.htm?sellerId=410111245&amp;activityId=5dd3d99b8735496e805d5bb3b2c81e08&amp;scene=taobao_shop" target="_blank"> <span class="dingwei dis" style="left:0px;top:0px;z-index:2;"><img src="https://gdp.alicdn.com/imgextra/i2/410111245/TB2rklOgFXXXXX9XpXXXXXXXXXX-410111245.gif" alt=" n02.gif" /></span> <span class="dingwei" style="left:0px;top:0px;z-index:1;"><img src="https://gdp.alicdn.com/imgextra/i3/410111245/TB20CVEgFXXXXcXXpXXXXXXXXXX-410111245.jpg" alt=" 02.jpg" /></span> </a> </i> <i class="hit_r_btn"> <a href="//taoquan.taobao.com/coupon/unify_apply.htm?sellerId=410111245&amp;activityId=dc3dc0e2f870408693accb5886d7f5d0&amp;scene=taobao_shop" target="_blank"> <span class="dingwei dis" style="left:0px;top:0px;z-index:2;"><img src="https://gdp.alicdn.com/imgextra/i1/410111245/TB2wLxSgFXXXXXKXpXXXXXXXXXX-410111245.gif" alt=" n03.gif" /></span> <span class="dingwei" style="left:0px;top:0px;z-index:1;"><img src="https://gdp.alicdn.com/imgextra/i3/410111245/TB29gxzgFXXXXXAXFXXXXXXXXXX-410111245.jpg" alt=" 03.jpg" /></span> </a> </i>
+			</div>
+			<div class="myshade dingwei" style="width:1920px;height:1300px;z-index:3;left:-1px;top:0px;">
+				&nbsp;
+			</div>
+			<div class="hitlight dingwei" style="z-index:2;overflow:hidden;height:1300px;width:1920px;">
+				<div class="hitlight1 dingwei">
+					<div class="J_TWidget Light1" data-widget-config="{&quot;effect&quot;:&quot;none&quot;,&quot;easing&quot;:&quot;none&quot;,&quot;contentCls&quot;:&quot;mylight&quot;,&quot;navCls&quot;:&quot;navlight&quot;,&quot;circular&quot;:false,&quot;duration&quot;:0.1,&quot;interval&quot;:1.5}" data-widget-type="Slide" style="width:1920px;height:1000px;z-index:1;">
+						<ul class="mylight">
+							<li>
+								&nbsp;
+							</li>
+							<li>
+								&nbsp;
+							</li>
+						</ul>
+						<ul class="navlight dingwei" style="z-index:2;">
+							<li style="overflow:visible;height:0px;width:0px;position:relative;">
+								<div style="height:1300px;overflow:hidden;">
+									 <img class="myimg dingwei" style="left:200px;top:0px;" src="https://gdp.alicdn.com/imgextra/i1/410111245/TB2xOvFgpXXXXbMXpXXXXXXXXXX-410111245.png" alt=" 左光.png" /> <img class="myimg dingwei rightlight" style="left:-1190px;top:0px;" src="https://gdp.alicdn.com/imgextra/i4/410111245/TB2wmP7gpXXXXXgXXXXXXXXXXXX-410111245.png" alt=" 右光.png" />
+								</div>
+							</li>
+							<li>
+								&nbsp;
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<div class="quanping" style="height:8543px;">
+    <div class="absolute">
+        <img src="https://img.alicdn.com/imgextra/i2/410111245/TB2VdjbgFXXXXatXXXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_02.jpg" usemap="#Mapwe" border="0">
+        <map name="Mapwe">
+            <area coords="432,6,1506,424" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.41.vNWSWi&id=41355316781&tracelog=jubuybigpic&scene=taobao_shop" target="_blank">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i4/410111245/TB2wOW4gFXXXXb0XXXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_03.jpg" usemap="#Maprr" border="0">
+        <map name="Maprr">
+            <area coords="364,9,958,709" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.42.vNWSWi&id=22827364621&abbucket=_AB-M32_B9&acm=03054.1003.1.291757&aldid=Ek17jYyb&abtest=_AB-LR32-PR32&scm=1003.1.03054.13_22827364621_291757&pos=1&scene=taobao_shop" target="_blank">
+            <area coords="1030,7,1562,717" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.43.vNWSWi&id=19806049264&tracelog=jubuybigpic&scene=taobao_shop" target="_blank">
+        </map>
+        <img src="https://gdp.alicdn.com/imgextra/i3/410111245/TB2Tgp_gpXXXXapXpXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_04.jpg" usemap="#Maphj" border="0">
+        <map name="Maphj">
+            <area coords="366,5,1646,617" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5001-4319753981.12.vNWSWi&id=522161278749&rn=b5f54fb8754be4c7319afa254c7f5942&abbucket=17&scene=taobao_shop" target="_blank">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i3/410111245/TB2NPq9gFXXXXbjXXXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_05.jpg" usemap="#Mapqq" border="0">
+        <map name="Mapqq">
+            <area coords="456,164,956,620" href="//detail.tmall.com/item.htm?spm=0.0.0.0.kWUKN9&id=521880894862&scene=taobao_shop" target="_blank">
+            <area coords="986,166,1444,628" href="//detail.tmall.com/item.htm?spm=0.0.0.0.IBMIu9&id=36312213012&scene=taobao_shop" target="_blank">
+        </map>
+       <img src="https://img.alicdn.com/imgextra/i2/410111245/TB27EyrgFXXXXcVXXXXXXXXXXXX-410111245.jpg" alt=" 双11预热PC端_03.jpg"/>
+        <img src="https://gdp.alicdn.com/imgextra/i2/410111245/TB2Gv44gpXXXXagXpXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_06.jpg">
+        
+        <div class='bg-1' style="height:248px;">
+            <a name="id1"></a>
+            <div class="zhezhao">
+            	<ul class='pi-1'>
+           		<Li>
+           		<img src="https://img.alicdn.com/imgextra/i4/410111245/TB2meCqgFXXXXc8XXXXXXXXXXXX-410111245.png" alt=" 未标题-2.png"/>
+					
+           		</Li>
+           		<Li>
+           		<img src="https://img.alicdn.com/imgextra/i4/410111245/TB2dRKAgFXXXXXLXXXXXXXXXXXX-410111245.png" alt=" 2-4.png"/>
+           		<a class='po1' href="#id2"><img src="https://img.alicdn.com/imgextra/i2/410111245/TB29L9cgFXXXXbuXpXXXXXXXXXX-410111245.png" alt=" 1-2.png"/></a>
+					
+           		</Li>
+           		<Li>
+
+           		<img src="https://img.alicdn.com/imgextra/i3/410111245/TB2GwWBgFXXXXXFXXXXXXXXXXXX-410111245.png" alt=" 2-3.png"/>
+           		<a class='po2' href="#id3"><img src="https://img.alicdn.com/imgextra/i2/410111245/TB2NMGrgFXXXXbWXXXXXXXXXXXX-410111245.png" alt=" 1-3.png"/></a>
+						
+           		</Li>
+           		<Li><img src="https://img.alicdn.com/imgextra/i2/410111245/TB2LZWygFXXXXXVXXXXXXXXXXXX-410111245.png" alt=" 2-2.png"/>
+					<a class='po3' href="#id4"><img src="https://img.alicdn.com/imgextra/i1/410111245/TB2wh1dgFXXXXboXpXXXXXXXXXX-410111245.png" alt=" 1-4.png"/></a>
+           		</Li>
+           		<Li style='margin:0'>
+           		<img src="https://img.alicdn.com/imgextra/i3/410111245/TB2cIqcgFXXXXbDXpXXXXXXXXXX-410111245.png" alt=" 2-1.png"/>
+					<a class='po4' href="#id5"><img src="https://img.alicdn.com/imgextra/i1/410111245/TB2cVCwgFXXXXbiXXXXXXXXXXXX-410111245.png" alt=" 1-5.png"/></a>
+           		</Li>
+           	</ul>
+            </div>
+           	
+			
+         </div>
+        <img src="https://img.alicdn.com/imgextra/i4/410111245/TB2HTGFgFXXXXaDXXXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_08.jpg" usemap="#Mapmm" border="0">
+        <map name="Mapmm">
+            <area coords="514,5,924,435" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.55.vNWSWi&id=17545467320&tracelog=jubuybigpic&scene=taobao_shop" target="_blank">
+            <area coords="950,5,1428,441" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.87.vNWSWi&id=45647556303&tracelog=jubuybigpic&scene=taobao_shop" target="_blank">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i2/410111245/TB23GKqgFXXXXXMXpXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_09.jpg" usemap="#Mapkkj" border="0">
+        <map name="Mapkkj">
+            <area coords="482,9,790,343" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.77.vNWSWi&id=17629766553&rn=5001c13cbc6bc9ca3d0516fe84551f38&abbucket=17&scene=taobao_shop" target="_blank">
+            <area coords="810,9,1112,359" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.44.vNWSWi&id=35423233081&tracelog=jubuybigpic&scene=taobao_shop" target="_blank">
+            <area coords="1146,13,1466,323" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.62.vNWSWi&id=37353091710&tracelog=jubuybigpic&scene=taobao_shop" target="_blank">
+        </map>
+        <div class='bg-2'>
+            <a name="id2"></a>
+            <div class="zhezhao">
+            	<ul class='pi-1'>
+           		<Li>
+           		<img src="https://img.alicdn.com/imgextra/i3/410111245/TB2ZEmwgFXXXXaHXXXXXXXXXXXX-410111245.png" alt=" 2-5.png"/>
+           		<a class='po1' href="#id1"><img src="https://img.alicdn.com/imgextra/i3/410111245/TB2BKibgFXXXXb.XpXXXXXXXXXX-410111245.png" alt=" 1-1.png"/></a>
+					
+           		</Li>
+           		<Li>
+           		<img src="https://img.alicdn.com/imgextra/i4/410111245/TB2MzWggFXXXXa.XpXXXXXXXXXX-410111245.png" alt=" 3.png"/>
+           		</Li>
+           		<Li>
+
+           		<img src="https://img.alicdn.com/imgextra/i3/410111245/TB2GwWBgFXXXXXFXXXXXXXXXXXX-410111245.png" alt=" 2-3.png"/>
+           		<a class='po2' href="#id3"><img src="https://img.alicdn.com/imgextra/i2/410111245/TB2NMGrgFXXXXbWXXXXXXXXXXXX-410111245.png" alt=" 1-3.png"/></a>
+						
+           		</Li>
+           		<Li><img src="https://img.alicdn.com/imgextra/i2/410111245/TB2LZWygFXXXXXVXXXXXXXXXXXX-410111245.png" alt=" 2-2.png"/>
+					<a class='po3' href="#id4"><img src="https://img.alicdn.com/imgextra/i1/410111245/TB2wh1dgFXXXXboXpXXXXXXXXXX-410111245.png" alt=" 1-4.png"/></a>
+           		</Li>
+           		<Li style='margin:0'>
+           		<img src="https://img.alicdn.com/imgextra/i3/410111245/TB2cIqcgFXXXXbDXpXXXXXXXXXX-410111245.png" alt=" 2-1.png"/>
+					<a class='po4' href="#id5"><img src="https://img.alicdn.com/imgextra/i1/410111245/TB2cVCwgFXXXXbiXXXXXXXXXXXX-410111245.png" alt=" 1-5.png"/></a>
+           		</Li>
+           	</ul>
+            </div>
+        </div>
+        <img src="https://img.alicdn.com/imgextra/i3/410111245/TB2kUSfgFXXXXchXpXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_12.jpg" usemap="#Mapttyy" border="0">
+        <map name="Mapttyy">
+            <area coords="434,1,1428,397" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.53.vNWSWi&id=19806049264&tracelog=jubuybigpic&scene=taobao_shop" target="_blank">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i2/410111245/TB2ueaHgFXXXXaeXXXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_14.jpg" usemap="#Maprtt" border="0">
+        <map name="Maprtt">
+            <area coords="460,6,792,362" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.54.vNWSWi&id=16199690173&tracelog=jubuybigpic&scene=taobao_shop" target="_blank">
+            <area coords="820,8,1126,358" href="//detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-2859208095.66.98leyY&id=43034576468&rn=4e16f203e6182c7a5a04f1367ebba570&abbucket=17&scene=taobao_shop" target="_blank">
+            <area coords="1150,12,1452,354" href="//detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-2859208095.51.3wsnR4&id=22073920928&rn=4123232092628770c90eafed5c242964&abbucket=17&scene=taobao_shop" target="_blank">
+        </map>
+        <div class='bg-3'>
+            <a name="id3"></a>
+            
+             <div class="zhezhao">
+            	<ul class='pi-1'>
+           		<Li>
+           		<img src="https://img.alicdn.com/imgextra/i3/410111245/TB2ZEmwgFXXXXaHXXXXXXXXXXXX-410111245.png" alt=" 2-5.png"/>
+           		<a class='po1' href="#id1"><img src="https://img.alicdn.com/imgextra/i3/410111245/TB2BKibgFXXXXb.XpXXXXXXXXXX-410111245.png" alt=" 1-1.png"/></a>
+					
+           		</Li>
+           		<Li>
+           		<img src="https://img.alicdn.com/imgextra/i4/410111245/TB2dRKAgFXXXXXLXXXXXXXXXXXX-410111245.png" alt=" 2-4.png"/>
+           		<a class='po2' href="#id2"><img src="https://img.alicdn.com/imgextra/i2/410111245/TB29L9cgFXXXXbuXpXXXXXXXXXX-410111245.png" alt=" 1-3.png"/></a>
+           		</Li>
+           		<Li>
+
+           		<img src="https://img.alicdn.com/imgextra/i2/410111245/TB29kSBgFXXXXX4XXXXXXXXXXXX-410111245.png" alt=" 4.png"/>
+           		
+						
+           		</Li>
+           		<Li><img src="https://img.alicdn.com/imgextra/i2/410111245/TB2LZWygFXXXXXVXXXXXXXXXXXX-410111245.png" alt=" 2-2.png"/>
+					<a class='po3' href="#id4"><img src="https://img.alicdn.com/imgextra/i1/410111245/TB2wh1dgFXXXXboXpXXXXXXXXXX-410111245.png" alt=" 1-4.png"/></a>
+           		</Li>
+           		<Li style='margin:0'>
+           		<img src="https://img.alicdn.com/imgextra/i3/410111245/TB2cIqcgFXXXXbDXpXXXXXXXXXX-410111245.png" alt=" 2-1.png"/>
+					<a class='po4' href="#id5"><img src="https://img.alicdn.com/imgextra/i1/410111245/TB2cVCwgFXXXXbiXXXXXXXXXXXX-410111245.png" alt=" 1-5.png"/></a>
+           		</Li>
+           	</ul>
+            </div>
+        </div>
+        <img src="https://img.alicdn.com/imgextra/i4/410111245/TB2611kgFXXXXaSXpXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_16.jpg" usemap="#Mapyyu" border="0">
+        <map name="Mapyyu">
+            <area coords="398,5,1566,405" href="//detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-2859208095.55.u0FJRV&id=38606315471&rn=7542241cf17cd11bd3bd439be0ebc683&abbucket=17&scene=taobao_shop" target="_blank">
+            <area coords="426,409,830,745" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.69.vNWSWi&id=5812615791&rn=8081fbde50c40d9c2d46d2e6977142a4&abbucket=17&scene=taobao_shop" target="_blank">
+            <area coords="850,411,1138,753" href="//detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-2859208095.49.dmCNHr&id=520920864341&rn=7d4518407df8f6ab55a060db086a4eae&abbucket=17&scene=taobao_shop" target="_blank">
+            <area coords="1158,413,1454,739" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.71.vNWSWi&id=44928119259&tracelog=jubuybigpic&scene=taobao_shop" target="_blank">
+        </map>
+        <div class='bg-4'>
+            <a name="id4"></a>
+             <div class="zhezhao">
+            	<ul class='pi-1'>
+           		<Li>
+           		<img src="https://img.alicdn.com/imgextra/i3/410111245/TB2ZEmwgFXXXXaHXXXXXXXXXXXX-410111245.png" alt=" 2-5.png"/>
+           		<a class='po1' href="#id1"><img src="https://img.alicdn.com/imgextra/i3/410111245/TB2BKibgFXXXXb.XpXXXXXXXXXX-410111245.png" alt=" 1-1.png"/></a>
+           		</Li>
+           		<Li>
+           		<img src="https://img.alicdn.com/imgextra/i4/410111245/TB2dRKAgFXXXXXLXXXXXXXXXXXX-410111245.png" alt=" 2-4.png"/>
+           		<a class='po2' href="#id2"><img src="https://img.alicdn.com/imgextra/i2/410111245/TB29L9cgFXXXXbuXpXXXXXXXXXX-410111245.png" alt=" 1-3.png"/></a>
+           		</Li>
+           		<Li>
+
+           		<img src="https://img.alicdn.com/imgextra/i3/410111245/TB2GwWBgFXXXXXFXXXXXXXXXXXX-410111245.png" alt=" 4.png"/>
+           		<a class='po3' href="#id3"><img src="https://img.alicdn.com/imgextra/i2/410111245/TB2NMGrgFXXXXbWXXXXXXXXXXXX-410111245.png" alt=" 1-4.png"/></a>
+           		
+           		</Li>
+           		<Li class='tp'><img src="https://img.alicdn.com/imgextra/i1/410111245/TB2XOSzgFXXXXX3XXXXXXXXXXXX-410111245.png" alt=" 5.png"/>
+					
+           		</Li>
+           		<Li style='margin:0'>
+           		<img src="https://img.alicdn.com/imgextra/i3/410111245/TB2cIqcgFXXXXbDXpXXXXXXXXXX-410111245.png" alt=" 2-1.png"/>
+					<a class='po4' href="#id5"><img src="https://img.alicdn.com/imgextra/i1/410111245/TB2cVCwgFXXXXbiXXXXXXXXXXXX-410111245.png" alt=" 1-5.png"/></a>
+           		</Li>
+           	</ul>
+            </div>
+        </div>
+
+        <img src="https://img.alicdn.com/imgextra/i4/410111245/TB2ACKsgFXXXXXmXpXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_18.jpg" usemap="#Map2wwwwww" border="0">
+        <map name="Map2wwwwww">
+            <area coords="420,5,768,523" href="//detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-2859208095.37.6RyPAW&id=26601960415&rn=e9619638882936fe8eaa5674ff55a9e6&abbucket=17&scene=taobao_shop" target="_blank">
+            <area coords="808,109,1120,593" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.79.vNWSWi&id=22825060745&abbucket=_AB-M32_B14&acm=03054.1003.1.291757&aldid=YXrnJJl7&abtest=_AB-LR32-PR32&scm=1003.1.03054.13_22825060745_291757&pos=1&scene=taobao_shop" target="_blank">
+            <area coords="1146,75,1472,505" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.78.vNWSWi&id=22824752965&tracelog=jubuybigpic&scene=taobao_shop" target="_blank">
+        </map>
+        <div class='bg-5' style="height:218px;">
+            <a name="id5"></a>
+            	<div class="zhezhao">
+            	<ul class='pi-1'>
+           		<Li>
+           		<img src="https://img.alicdn.com/imgextra/i3/410111245/TB2ZEmwgFXXXXaHXXXXXXXXXXXX-410111245.png" alt=" 2-5.png"/>
+           		<a class='po1' href="#id1"><img src="https://img.alicdn.com/imgextra/i3/410111245/TB2BKibgFXXXXb.XpXXXXXXXXXX-410111245.png" alt=" 1-1.png"/></a>
+           		</Li>
+           		<Li>
+           		<img src="https://img.alicdn.com/imgextra/i4/410111245/TB2dRKAgFXXXXXLXXXXXXXXXXXX-410111245.png" alt=" 2-4.png"/>
+           		<a class='po2' href="#id2"><img src="https://img.alicdn.com/imgextra/i2/410111245/TB29L9cgFXXXXbuXpXXXXXXXXXX-410111245.png" alt=" 1-3.png"/></a>
+           		</Li>
+           		<Li>
+
+           		<img src="https://img.alicdn.com/imgextra/i3/410111245/TB2GwWBgFXXXXXFXXXXXXXXXXXX-410111245.png" alt=" 4.png"/>
+           		<a class='po3' href="#id3"><img src="https://img.alicdn.com/imgextra/i2/410111245/TB2NMGrgFXXXXbWXXXXXXXXXXXX-410111245.png" alt=" 1-4.png"/></a>
+           		
+           		</Li>
+           		<Li><img src="https://img.alicdn.com/imgextra/i2/410111245/TB2LZWygFXXXXXVXXXXXXXXXXXX-410111245.png" alt=" 5.png"/>
+					<a class='po4' href="#id4"><img src="https://img.alicdn.com/imgextra/i1/410111245/TB2wh1dgFXXXXboXpXXXXXXXXXX-410111245.png" alt=" 1-5.png"/></a>
+           		</Li>
+           		<Li style='margin:0'>
+           		<img src="https://img.alicdn.com/imgextra/i2/410111245/TB2L41mgFXXXXXcXpXXXXXXXXXX-410111245.png" alt=" 6.png"/>
+					
+           		</Li>
+           	</ul>
+            </div>
+        </div>
+        <img src="https://gdp.alicdn.com/imgextra/i1/410111245/TB2_xmqgpXXXXacXpXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_21.jpg" usemap="#Maplkkl" border="0">
+        <map name="Maplkkl">
+            <area coords="488,4,1462,378" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.91.vNWSWi&id=36611546831&tracelog=jubuybigpic&scene=taobao_shop" target="_blank">
+        </map>
+        <img src="https://img.alicdn.com/imgextra/i2/410111245/TB2pz9lgFXXXXajXpXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_23.jpg" usemap="#Mapkkki" border="0">
+        <map name="Mapkkki">
+            <area coords="460,25,774,379" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.86.vNWSWi&id=12893059817&tracelog=jubuybigpic&scene=taobao_shop" target="_blank">
+            <area coords="790,19,1130,379" href="//detail.tmall.com/item.htm?spm=a1z10.1-b.w5003-11821318847.88.vNWSWi&id=24272584731&rn=62ba61b5e90f5c331ec099d8137e33e1&abbucket=17&scene=taobao_shop" target="_blank">
+            <area coords="1146,27,1448,377" href="//detail.tmall.com/item.htm?spm=a1z10.3-b.w4011-2859208095.104.iViHEo&id=35425408548&rn=a2e0a9d92728988a064f00927f129ee3&abbucket=17&scene=taobao_shop" target="_blank">
+        </map>
+        <img src="https://gdp.alicdn.com/imgextra/i2/410111245/TB2j2mlgpXXXXbXXXXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_25.jpg">
+        <img src="https://gdp.alicdn.com/imgextra/i4/410111245/TB274yfgpXXXXcBXXXXXXXXXXXX-410111245.jpg" alt=" 双十一预热页面-中下_26.jpg" usemap="#Mapghmm" border="0">
+        <map name="Mapghmm">
+            <area shape="poly" coords="794,97,956,57,1116,95,1122,149,804,157" href="#">
+        </map>
+    </div>
+</div>
+</body>
+</html>
