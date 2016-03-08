@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Best Wishes From Ecmoho</title>
+<meta name="viewport" content="width = device-width,initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.inline-png-1.4.5.min.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<script type="text/javascript">
+        window.onload=function(){
+            document.getElementById("loading").style.display = "none"; 
+        }
+</script>
+<script src="js/jquery-1.9.1-min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script>
+
+$(document).on("pageinit","#page1",function(){  
+	$(".page1Btn").on("click",function(){  
+		$(".page1Btn").hide("fast");  
+		$(".page1Btn2").show("fast");
+
+	});
+});
+
+$(function(){
+    $("#circle-news-list").on("click",function(){
+        $("#page2").fadeIn();
+        $(".logoAnm1").fadeIn();
+        $(".logoAnm2").fadeOut();
+    });
+    $(".page1Btn3").on('click',function(){
+        $(this).hide();
+        $('.page1Btn4').addClass("p_show");
+        $("#page2").addClass("change1");
+    })
+    $(".page1Btn4").on("click",function(){
+        $("#page3").fadeIn().addClass("change2");
+        $("#page2,#page1").fadeOut();
+    });
+})
+
+</script>
+</head>
+
+<body>
+<img src="images/PIC300.jpg" width="0" height="0" style="position:absolute;top:0;left:0" />
+<audio id="music" src="bg_music.mp3" autoplay loop>你的浏览器不支持audio标签。</audio>
+<a id="audio_btn" class="music"><img src="images/units-icons.png" width="27" height="27" id="music_btn" border="0"></a>
+
+<div id="loading" class="load6" style="display:block">
+    <div class="loader">
+        <img src="images/loadingPic1.png" class="loading1"/>
+        <img src="images/loadingPic2.png" class="loading2"/>
+        <img src="images/loadingImg.png" class="loading3"/>
+    </div>
+</div>
+
+<div style="background:#000;">
+    <div data-role="page" id="page1" class="page page-1-1 page-current">
+        <div class="wrap" data-role="listview" id="circle-news-list">
+        	<div class="main">
+            	<img src="images/page1_logo.png" class="logo logo_Anm" alt=""/>
+                <span class="logoIcon">
+                	<img src="images/page1_logoPic.png" class="logo_icon logoAnm1" alt=""/>
+                    <img src="images/page2_logoPic.png" class="logo_icon logoAnm2" alt=""/>
+                </span>
+                <img src="images/page1_img1.png" class="crystal crystal_Anm" alt=""/>
+                <div class="page1Btn">
+                    <img src="images/page1_text.png" class="text text_Anm" alt=""/>
+                </div>
+                <div class="page1Btn2">
+                    <img src="images/page_btn.png" alt=""/>
+                </div>
+            </div>
+            <img src="images/page1_Bg01.jpg" style="position: absolute;left: 0;bottom: 0;" class="page1_bg" alt=""/>
+        </div>
+    </div>
+    <div data-role="page" id="page2" class="page page-2-1 page-current" style="overflow: hidden;">
+        <div class="wrap" data-role="listview" id="circle-news-list2" >
+            <img src="images/page1_Bg01.jpg" class="page1_bg" alt=""/>
+            <img src="images/page2_Bg.jpg" class="page1_bg2" alt=""/>
+            <div class="sunshine">
+                <img src="images/l1.png" class="l1"/>
+                <img src="images/l2.png" class="l2"/>
+                <img src="images/l3.png" class="l3"/>
+                <img src="images/l4.png" class="l4"/>
+                <img src="images/l5.png" class="l5"/>
+            </div>
+        	<img src="images/light.png" class="light light_x" alt=""/>
+            <div class="fadeout"><img src="images/page1_img1.png" class="crystal2 crystal_Anmwp" alt=""/></div>
+            <div class="page1Btn3">
+                <img src="images/page_btn.png" alt=""/>
+            </div>
+            <div class="page1Btn4">
+                <img src="images/page_btn.png" alt=""/>
+            </div>
+            <div class="page_LG"><img src="images/light2.png" class="light2" alt=""/></div>
+            <div class="page_LG2"><img src="images/light3.png" class="light3" alt=""/></div>
+            <div class="page_LG"><img src="images/light2.png" class="light4" alt=""/></div>
+            <div class="page_LG2"><img src="images/light3.png" class="light5" alt=""/></div>
+            <div class="main">
+
+                <img src="images/page2_img1.png" class="crystal2 crystal_Anm_d" alt=""/>
+
+            </div>
+
+        </div>
+    </div>
+    <div data-role="page" id="page3" class="page page-3-1 page-current" style="overflow: hidden;">
+        <div class="wrap" data-role="listview" id="circle-news-list3">
+        	<img src="images/page3_logo.png" class="logo_last" alt=""/>
+            <img src="images/page3_text1.png" class="Text01" alt=""/>
+            <img src="images/page3_text2.png" class="Text02" alt=""/>
+            <img src="images/page3_textThree.png" class="Text_three" alt=""/>
+            <img src="images/page3_icon1.png" class="Text_Icon" alt=""/>
+            <img src="images/page3_icon2.png" class="Text_Icon2" alt=""/>
+            <img src="images/light.png" class="light" alt=""/>
+            <div class="main">
+
+                <div class="page_LGwp"><img src="images/light2.png" class="lightwp2" alt=""/></div>
+                <div class="page_LGwp2"><img src="images/light3.png" class="lightwp3" alt=""/></div>
+                <img src="images/page2_img1.png" class="crystal crystal_Anm" alt=""/>
+                <img src="images/page2_Bg.jpg" class="page1_bg" alt=""/>
+            </div>
+            <img src="images/page3_text.png" class="btText" alt=""/>
+      </div>
+    </div>   
+</div>
+<script>
+$("#audio_btn").click(function(){
+	var music = document.getElementById("music");
+	if(music.paused){
+		music.play();
+		$("#music_btn").attr("src","images/units-icons.png");
+	}else{
+		music.pause();
+		$("#music_btn").attr("src","images/units-icons2.png");
+	}
+});
+
+function playPause() {
+    var music = document.getElementById('music2');
+    var music_btn = document.getElementById('music_btn2');
+    if (music.paused){
+        music.play();
+        music_btn.src = 'images/units-icons.png';
+    }
+    else{
+        music.pause();
+        music_btn.src = 'images/units-icons2.png'; 
+    }
+}
+</script>
+</body>
+</html>
