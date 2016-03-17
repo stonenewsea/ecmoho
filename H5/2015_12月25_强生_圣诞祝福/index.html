@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.inline-png-1.4.5.min.css">
+<link rel="stylesheet" href="css/index.css">
+
+
+<script type="text/javascript">
+        window.onload=function(){
+            document.getElementById("loading").style.display = "none"; 
+        }
+
+</script>
+
+<script src="js/jquery-1.9.1-min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<title>Best Wishes Fom Ecmoho</title>
+</head>
+<style>
+
+#audio_btn {
+	position:fixed;
+	right:2%;
+	top:2%;
+	z-index:99;
+}
+
+*{margin:0px;padding:0px;}
+</style>
+<body>
+<div style="background:none;">
+<img src="images/PCI300.jpg" width="0" height="0" style="position:absolute;top:0;left:0" />
+
+	<div id="loading" class="load6"><div class="loader">Loading...</div></div>
+
+    <audio id="music" src="bg_music.mp3" autoplay="autoplay" loop>你的浏览器不支持audio标签。</audio>
+    <a id="audio_btn"><img src="images/units-icons.png" width="27" height="27" id="music_btn" border="0"></a>
+
+	
+
+
+	<div class='loader spinningDisc'></div>
+
+    <div class="H5" data-role="page" id="pageone">
+        <a class="H5_page1">
+            <a href="##" class="mybtn"> </a>
+            <img class="img1" src="images/01.jpg">
+            <img class="img2" src="images/02.jpg">
+            <img class="img3" src="images/03.jpg">
+            <img class="img4" src="images/04.jpg">
+            <img class="img5" src="images/05.jpg">
+            <img class="img6" src="images/06.jpg">
+            <img class="img7" src="images/07.jpg">
+            <img class="img8" src="images/08.jpg">
+            <img class="img9" src="images/09.jpg">
+            <img class="img10" src="images/10.jpg">
+            <img class="img11" src="images/11.jpg">
+            <img class="img12" src="images/12.jpg">
+            <img class="img13" src="images/13.jpg">
+            <img class="img14" src="images/14.jpg">
+            <img class="img15" src="images/15.jpg">
+            <img class="img16" src="images/16.jpg">
+            <img class="img17" src="images/17.jpg">
+            <img class="img18" src="images/18.jpg">
+            <img class="img19" src="images/19.jpg">
+            <img class="img20" src="images/20.jpg">
+            <img class="img21" src="images/20.jpg">
+            <img class="img22" src="images/20.jpg">
+            <img class="img23" src="images/20.jpg">
+            <img class="img24" src="images/20.jpg">
+            <img class="img25" src="images/20.jpg">
+
+            <img class="img26" src="images/21.jpg">
+            <img class="img27" src="images/21.jpg">
+            <img class="img28" src="images/21.jpg">
+            <img class="img29" src="images/21.jpg">
+            <img class="img30" src="images/21.jpg">
+
+
+            <img class="img31" src="images/22.jpg">
+            <img class="img32" src="images/22.jpg">
+            <img class="img33" src="images/22.jpg">
+            <img class="img34" src="images/22.jpg">
+            <img class="img35" src="images/22.jpg">
+
+
+
+            <img class="img36" src="images/23.jpg">
+            <img class="img37" src="images/24.jpg">
+            <img class="img38" src="images/25.jpg">
+            <img class="img39" src="images/26.jpg">
+            <img class="img40" src="images/27.jpg">
+            <img class="img41" src="images/28.jpg">
+            <img class="img42" src="images/29.jpg">
+            <img class="img43" src="images/30.jpg">
+            <img class="img44" src="images/31.jpg">
+            <img class="img45" src="images/32.jpg">
+            <img class="img46" src="images/33.jpg">
+            <img class="img47" src="images/34.jpg">
+            <img class="img48" src="images/35.jpg">
+            <img class="img49" src="images/36.jpg">
+            <img class="img50" src="images/37.jpg">
+
+        </div>
+    </div>
+
+</div>
+<script>
+	$(function(){
+		$("#audio_btn").click(function(){
+			var music = document.getElementById("music");
+			if(music.paused){
+				music.play();
+				$("#music_btn").attr("src","images/units-icons.png");
+			}else{
+				music.pause();
+				$("#music_btn").attr("src","images/units-icons2.png");
+			}
+			
+		});
+		$(".mybtn").click(function(){
+            $(this).hide();
+			$("#pageone").addClass("action");
+		})	
+	})
+    
+    </script>
+</body>
+</html>

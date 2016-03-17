@@ -1,0 +1,554 @@
+
+
+#audio_btn {
+	position:fixed;
+	right:2%;
+	top:2%;
+	z-index:99;
+}
+.mybtn {background: url("../images/11_03.png") no-repeat;height:91px;width: 91px;display:block;position: absolute;left: 50%;top:50%;margin-top:-45px;margin-left: -45px;z-index:99;background-size: 100% 100%;}
+*{margin:0px;padding:0px;}
+
+#loading {width:100%;height:100%; background:url(../images/bg.jpg) no-repeat;background-size:100% 100%; position:fixed; z-index:8; display:block}
+.load6 .loader {
+	margin: 0.8em auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  top:50%;
+  margin-top:-60px;
+  border-top: 1.1em solid #e3ffe4;
+  border-right: 1.1em solid #e3ffe4;
+  border-bottom: 1.1em solid #e3ffe4;
+  border-left: 1.1em solid #047907;
+  -webkit-animation: load6 1.1s infinite linear;
+  animation: load6 1.1s infinite linear;
+}
+.load6 .loader,
+.load6 .loader:after {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+@-webkit-keyframes load6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.H5 img {
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	opacity:0;
+}
+.H5 .img1 {opacity:1;}
+@-webkit-keyframes fadeOut{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+@-moz-keyframes fadeOut{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+/*.action .img1 {
+	-webkit-animation:fadeOut .1s .1s linear both;
+	-moz-animation:fadeOut .1s .1s linear both;
+}*/
+.action .img2 {
+	-webkit-animation:fadeOut .1s .2s linear both;
+	-moz-animation:fadeOut .1s .2s linear both;
+}
+.action .img3 {
+	-webkit-animation:fadeOut .1s .3s linear both;
+	-moz-animation:fadeOut .1s .3s linear both;
+}
+.action .img4 {
+	-webkit-animation:fadeOut .1s .4s linear both;
+	-moz-animation:fadeOut .1s .4s linear both;
+}
+.action .img5 {
+	-webkit-animation:fadeOut .1s .5s linear both;
+	-moz-animation:fadeOut .1s .5s linear both;
+}
+.action .img6 {
+	-webkit-animation:fadeOut .1s .6s linear both;
+	-moz-animation:fadeOut .1s .6s linear both;
+}
+.action .img7 {
+	-webkit-animation:fadeOut .1s .7s linear both;
+	-moz-animation:fadeOut .1s .7s linear both;
+}
+.action .img8 {
+	-webkit-animation:fadeOut .1s .8s linear both;
+	-moz-animation:fadeOut .1s .8s linear both;
+}
+.action .img9 {
+	-webkit-animation:fadeOut .1s .9s linear both;
+	-moz-animation:fadeOut .1s .9s linear both;
+}
+.action .img10 {
+	-webkit-animation:fadeOut .1s 1s linear both;
+	-moz-animation:fadeOut .1s 1s linear both;
+}
+.action .img11 {
+	-webkit-animation:fadeOut .1s 1.1s linear both;
+	-moz-animation:fadeOut .1s 1.1s linear both;
+}
+.action .img12 {
+	-webkit-animation:fadeOut .1s 1.2s linear both;
+	-moz-animation:fadeOut .1s 1.2s linear both;
+}
+.action .img13 {
+	-webkit-animation:fadeOut .1s 1.3s linear both;
+	-moz-animation:fadeOut .1s 1.3s linear both;
+}
+.action .img14 {
+	-webkit-animation:fadeOut .1s 1.4s linear both;
+	-moz-animation:fadeOut .1s 1.4s linear both;
+}
+.action .img15 {
+	-webkit-animation:fadeOut .1s 1.5s linear both;
+	-moz-animation:fadeOut .1s 1.5s linear both;
+}
+.action .img16 {
+	-webkit-animation:fadeOut .1s 1.6s linear both;
+	-moz-animation:fadeOut .1s 1.6s linear both;
+}
+.action .img17 {
+	-webkit-animation:fadeOut .1s 1.7s linear both;
+	-moz-animation:fadeOut .1s 1.7s linear both;
+}
+.action .img18 {
+	-webkit-animation:fadeOut .1s 1.8s linear both;
+	-moz-animation:fadeOut .1s 1.8s linear both;
+}
+.action .img19 {
+	-webkit-animation:fadeOut .1s 1.9s linear both;
+	-moz-animation:fadeOut .1s 1.9s linear both;
+}
+
+.action .img20 {
+	-webkit-animation:fadeOut .1s 2.0s linear both;
+	-moz-animation:fadeOut .1s 2.0s linear both;
+}
+.action .img21 {
+	-webkit-animation:fadeOut .1s 2.1s linear both;
+	-moz-animation:fadeOut .1s 2.1s linear both;
+}
+.action .img22 {
+	-webkit-animation:fadeOut .1s 2.2s linear both;
+	-moz-animation:fadeOut .1s 2.2s linear both;
+}
+.action .img23 {
+	-webkit-animation:fadeOut .1s 2.3s linear both;
+	-moz-animation:fadeOut .1s 2.3s linear both;
+}
+.action .img24 {
+	-webkit-animation:fadeOut .1s 2.4s linear both;
+	-moz-animation:fadeOut .1s 2.4s linear both;
+}
+.action .img25 {
+	-webkit-animation:fadeOut .1s 2.5s linear both;
+	-moz-animation:fadeOut .1s 2.5s linear both;
+}
+.action .img26 {
+	-webkit-animation:fadeOut .1s 2.6s linear both;
+	-moz-animation:fadeOut .1s 2.6s linear both;
+}
+.action .img27 {
+	-webkit-animation:fadeOut .1s 2.7s linear both;
+	-moz-animation:fadeOut .1s 2.7s linear both;
+}
+.action .img28 {
+	-webkit-animation:fadeOut .1s 2.8s linear both;
+	-moz-animation:fadeOut .1s 2.8s linear both;
+}
+.action .img29 {
+	-webkit-animation:fadeOut .1s 2.9s linear both;
+	-moz-animation:fadeOut .1s 2.9s linear both;
+}
+.action .img30 {
+	-webkit-animation:fadeOut .1s 3s linear both;
+	-moz-animation:fadeOut .1s 3s linear both;
+}
+.action .img31 {
+	-webkit-animation:fadeOut .1s 3.1s linear both;
+	-moz-animation:fadeOut .1s 3.1s linear both;
+}
+.action .img32 {
+	-webkit-animation:fadeOut .1s 3.2s linear both;
+	-moz-animation:fadeOut .1s 3.2s linear both;
+}
+.action .img33 {
+	-webkit-animation:fadeOut .1s 3.3s linear both;
+	-moz-animation:fadeOut .1s 3.3s linear both;
+}
+.action .img34 {
+	-webkit-animation:fadeOut .1s 3.4s linear both;
+	-moz-animation:fadeOut .1s 3.4s linear both;
+}
+.action .img35 {
+	-webkit-animation:fadeOut .1s 3.5s linear both;
+	-moz-animation:fadeOut .1s 3.5s linear both;
+}
+.action .img36 {
+	-webkit-animation:fadeOut .1s 3.6s linear both;
+	-moz-animation:fadeOut .1s 3.6s linear both;
+}
+.action .img37 {
+	-webkit-animation:fadeOut .1s 3.7s linear both;
+	-moz-animation:fadeOut .1s 3.7s linear both;
+}
+.action .img38 {
+	-webkit-animation:fadeOut .1s 3.8s linear both;
+	-moz-animation:fadeOut .1s 3.8s linear both;
+}
+.action .img39 {
+	-webkit-animation:fadeOut .1s 3.9s linear both;
+	-moz-animation:fadeOut .1s 3.9s linear both;
+}
+.action .img40 {
+	-webkit-animation:fadeOut .1s 4.0s linear both;
+	-moz-animation:fadeOut .1s 4.0s linear both;
+}
+.action .img41 {
+	-webkit-animation:fadeOut .1s 4.1s linear both;
+	-moz-animation:fadeOut .1s 4.1s linear both;
+}
+.action .img42 {
+	-webkit-animation:fadeOut .1s 4.2s linear both;
+	-moz-animation:fadeOut .1s 4.2s linear both;
+}
+.action .img43 {
+	-webkit-animation:fadeOut .1s 4.3s linear both;
+	-moz-animation:fadeOut .1s 4.3s linear both;
+}
+.action .img44 {
+	-webkit-animation:fadeOut .1s 4.4s linear both;
+	-moz-animation:fadeOut .1s 4.4s linear both;
+}
+.action .img45 {
+	-webkit-animation:fadeOut .1s 4.5s linear both;
+	-moz-animation:fadeOut .1s 4.5s linear both;
+}
+.action .img46 {
+	-webkit-animation:fadeOut .1s 4.6s linear both;
+	-moz-animation:fadeOut .1s 4.6s linear both;
+}
+.action .img47 {
+	-webkit-animation:fadeOut .1s 4.7s linear both;
+	-moz-animation:fadeOut .1s 4.7s linear both;
+}
+.action .img48 {
+	-webkit-animation:fadeOut .1s 4.8s linear both;
+	-moz-animation:fadeOut .1s 4.8s linear both;
+}
+.action .img49 {
+	-webkit-animation:fadeOut .1s 4.9s linear both;
+	-moz-animation:fadeOut .1s 4.9s linear both;
+}
+.action .img50 {
+	-webkit-animation:fadeOut .1s 5.0s linear both;
+	-moz-animation:fadeOut .1s 5.0s linear both;
+}
+.action .img51 {
+	-webkit-animation:fadeOut .1s 5.1s linear both;
+	-moz-animation:fadeOut .1s 5.1s linear both;
+}
+.action .img52 {
+	-webkit-animation:fadeOut .1s 5.2s linear both;
+	-moz-animation:fadeOut .1s 5.2s linear both;
+}
+.action .img53 {
+	-webkit-animation:fadeOut .1s 5.3s linear both;
+	-moz-animation:fadeOut .1s 5.3s linear both;
+}
+.action .img54 {
+	-webkit-animation:fadeOut .1s 5.4s linear both;
+	-moz-animation:fadeOut .1s 5.4s linear both;
+}
+.action .img55 {
+	-webkit-animation:fadeOut .1s 5.5s linear both;
+	-moz-animation:fadeOut .1s 5.5s linear both;
+}
+.action .img56 {
+	-webkit-animation:fadeOut .1s 5.6s linear both;
+	-moz-animation:fadeOut .1s 5.6s linear both;
+}
+.action .img57 {
+	-webkit-animation:fadeOut .1s 5.7s linear both;
+	-moz-animation:fadeOut .1s 5.7s linear both;
+}
+.action .img58 {
+	-webkit-animation:fadeOut .1s 5.8s linear both;
+	-moz-animation:fadeOut .1s 5.8s linear both;
+}
+.action .img59 {
+	-webkit-animation:fadeOut .1s 5.9s linear both;
+	-moz-animation:fadeOut .1s 5.9s linear both;
+}
+.action .img60 {
+	-webkit-animation:fadeOut .1s 6s linear both;
+	-moz-animation:fadeOut .1s 6s linear both;
+}
+.action .img61 {
+	-webkit-animation:fadeOut .1s 6.1s linear both;
+	-moz-animation:fadeOut .1s 6.1s linear both;
+}
+.action .img62 {
+	-webkit-animation:fadeOut .1s 6.2s linear both;
+	-moz-animation:fadeOut .1s 6.2s linear both;
+}
+.action .img63 {
+	-webkit-animation:fadeOut .1s 6.3s linear both;
+	-moz-animation:fadeOut .1s 6.3s linear both;
+}
+.action .img64 {
+	-webkit-animation:fadeOut .1s 6.4s linear both;
+	-moz-animation:fadeOut .1s 6.4s linear both;
+}
+.action .img65 {
+	-webkit-animation:fadeOut .1s 6.5s linear both;
+	-moz-animation:fadeOut .1s 6.5s linear both;
+}
+.action .img66 {
+	-webkit-animation:fadeOut .1s 6.6s linear both;
+	-moz-animation:fadeOut .1s 6.6s linear both;
+}
+.action .img67 {
+	-webkit-animation:fadeOut .1s 6.7s linear both;
+	-moz-animation:fadeOut .1s 6.7s linear both;
+}
+.action .img68 {
+	-webkit-animation:fadeOut .1s 6.8s linear both;
+	-moz-animation:fadeOut .1s 6.8s linear both;
+}
+.action .img69 {
+	-webkit-animation:fadeOut .1s 6.9s linear both;
+	-moz-animation:fadeOut .1s 6.9s linear both;
+}
+.action .img70 {
+	-webkit-animation:fadeOut .1s 7s linear both;
+	-moz-animation:fadeOut .1s 7s linear both;
+}
+.action .img71 {
+	-webkit-animation:fadeOut .1s 7.1s linear both;
+	-moz-animation:fadeOut .1s 7.1s linear both;
+}
+.action .img72 {
+	-webkit-animation:fadeOut .1s 7.2s linear both;
+	-moz-animation:fadeOut .1s 7.2s linear both;
+}
+.action .img73 {
+	-webkit-animation:fadeOut .1s 7.3s linear both;
+	-moz-animation:fadeOut .1s 7.3s linear both;
+}
+.action .img74 {
+	-webkit-animation:fadeOut .1s 7.4s linear both;
+	-moz-animation:fadeOut .1s 7.4s linear both;
+}
+.action .img75 {
+	-webkit-animation:fadeOut .1s 7.5s linear both;
+	-moz-animation:fadeOut .1s 7.5s linear both;
+}
+.action .img76 {
+	-webkit-animation:fadeOut .1s 7.6s linear both;
+	-moz-animation:fadeOut .1s 7.6s linear both;
+}
+.action .img77 {
+	-webkit-animation:fadeOut .1s 7.7s linear both;
+	-moz-animation:fadeOut .1s 7.7s linear both;
+}
+.action .img78 {
+	-webkit-animation:fadeOut .1s 7.8s linear both;
+	-moz-animation:fadeOut .1s 7.8s linear both;
+}
+.action .img79 {
+	-webkit-animation:fadeOut .1s 7.9s linear both;
+	-moz-animation:fadeOut .1s 7.9s linear both;
+}
+.action .img80 {
+	-webkit-animation:fadeOut .1s 8.0s linear both;
+	-moz-animation:fadeOut .1s 8.0s linear both;
+}
+.action .img81 {
+	-webkit-animation:fadeOut .1s 8.1s linear both;
+	-moz-animation:fadeOut .1s 8.1s linear both;
+}
+.action .img82 {
+	-webkit-animation:fadeOut .1s 8.2s linear both;
+	-moz-animation:fadeOut .1s 8.2s linear both;
+}
+.action .img83 {
+	-webkit-animation:fadeOut .1s 8.3s linear both;
+	-moz-animation:fadeOut .1s 8.3s linear both;
+}
+.action .img84 {
+	-webkit-animation:fadeOut .1s 8.4s linear both;
+	-moz-animation:fadeOut .1s 8.4s linear both;
+}
+.action .img85{
+	-webkit-animation:fadeOut .1s 8.5s linear both;
+	-moz-animation:fadeOut .1s 8.5s linear both;
+}
+.action .img86 {
+	-webkit-animation:fadeOut .1s 8.6s linear both;
+	-moz-animation:fadeOut .1s 8.6s linear both;
+}
+.action .img87 {
+	-webkit-animation:fadeOut .1s 8.7s linear both;
+	-moz-animation:fadeOut .1s 8.7s linear both;
+}
+.action .img88 {
+	-webkit-animation:fadeOut .1s 8.8s linear both;
+	-moz-animation:fadeOut .1s 8.8s linear both;
+}
+.action .img89 {
+	-webkit-animation:fadeOut .1s 8.9s linear both;
+	-moz-animation:fadeOut .1s 8.9s linear both;
+}
+.action .img90 {
+	-webkit-animation:fadeOut .1s 9.0s linear both;
+	-moz-animation:fadeOut .1s 9.0s linear both;
+}
+.action .img91 {
+	-webkit-animation:fadeOut .1s 9.1s linear both;
+	-moz-animation:fadeOut .1s 9.1s linear both;
+}
+.action .img92 {
+	-webkit-animation:fadeOut .1s 9.2s linear both;
+	-moz-animation:fadeOut .1s 9.2s linear both;
+}
+.action .img93 {
+	-webkit-animation:fadeOut .1s 9.3s linear both;
+	-moz-animation:fadeOut .1s 9.3s linear both;
+}
+.action .img94 {
+	-webkit-animation:fadeOut .1s 9.4s linear both;
+	-moz-animation:fadeOut .1s 9.4s linear both;
+}
+.action .img95 {
+	-webkit-animation:fadeOut .1s 9.5s linear both;
+	-moz-animation:fadeOut .1s 9.5s linear both;
+}
+.action .img96 {
+	-webkit-animation:fadeOut .1s 9.6s linear both;
+	-moz-animation:fadeOut .1s 9.6s linear both;
+}
+.action .img97 {
+	-webkit-animation:fadeOut .1s 9.7s linear both;
+	-moz-animation:fadeOut .1s 9.7s linear both;
+}
+.action .img98 {
+	-webkit-animation:fadeOut .1s 9.8s linear both;
+	-moz-animation:fadeOut .1s 9.8s linear both;
+}
+.action .img99 {
+	-webkit-animation:fadeOut .1s 9.9s linear both;
+	-moz-animation:fadeOut .1s 9.9s linear both;
+}
+.action .img100 {
+	-webkit-animation:fadeOut .1s 10s linear both;
+	-moz-animation:fadeOut .1s 10s linear both;
+}
+.action .img101{
+	-webkit-animation:fadeOut .1s 10.1s linear both;
+	-moz-animation:fadeOut .1s 10.1s linear both;
+}
+.action .img102 {
+	-webkit-animation:fadeOut .1s 10.2s linear both;
+	-moz-animation:fadeOut .1s 10.2s linear both;
+}
+.action .img103 {
+	-webkit-animation:fadeOut .1s 10.3s linear both;
+	-moz-animation:fadeOut .1s 10.3s linear both;
+}
+.action .img104 {
+	-webkit-animation:fadeOut .1s 10.4s linear both;
+	-moz-animation:fadeOut .1s 10.4s linear both;
+}
+.action .img105 {
+	-webkit-animation:fadeOut .1s 10.5s linear both;
+	-moz-animation:fadeOut .1s 10.5s linear both;
+}
+.action .img106 {
+	-webkit-animation:fadeOut .1s 10.6s linear both;
+	-moz-animation:fadeOut .1s 10.6s linear both;
+}
+.action .img107 {
+	-webkit-animation:fadeOut .1s 10.7s linear both;
+	-moz-animation:fadeOut .1s 10.7s linear both;
+}
+.action .img108 {
+	-webkit-animation:fadeOut .1s 10.8s linear both;
+	-moz-animation:fadeOut .1s 10.8s linear both;
+}
+.action .img109 {
+	-webkit-animation:fadeOut .1s 10.9s linear both;
+	-moz-animation:fadeOut .1s 10.9s linear both;
+}
+.action .img110 {
+	-webkit-animation:fadeOut .1s 11s linear both;
+	-moz-animation:fadeOut .1s 11s linear both;
+}
+.action .img111{
+	-webkit-animation:fadeOut .1s 11.1s linear both;
+	-moz-animation:fadeOut .1s 11.1s linear both;
+}
+.action .img112 {
+	-webkit-animation:fadeOut .1s 11.2s linear both;
+	-moz-animation:fadeOut .1s 11.2s linear both;
+}
+.action .img113 {
+	-webkit-animation:fadeOut .1s 11.3s linear both;
+	-moz-animation:fadeOut .1s 11.3s linear both;
+}
+.action .img114 {
+	-webkit-animation:fadeOut .1s 11.4s linear both;
+	-moz-animation:fadeOut .1s 11.4s linear both;
+}
+.action .img115 {
+	-webkit-animation:fadeOut .1s 11.5s linear both;
+	-moz-animation:fadeOut .1s 11.5s linear both;
+}
+.action .img116 {
+	-webkit-animation:fadeOut .1s 11.6s linear both;
+	-moz-animation:fadeOut .1s 11.6s linear both;
+}
+.action .img117 {
+	-webkit-animation:fadeOut .1s 11.7s linear both;
+	-moz-animation:fadeOut .1s 11.7s linear both;
+}
+.action .img118 {
+	-webkit-animation:fadeOut .1s 11.8s linear both;
+	-moz-animation:fadeOut .1s 11.8s linear both;
+}
+.action .img119 {
+	-webkit-animation:fadeOut .1s 11.9s linear both;
+	-moz-animation:fadeOut .1s 11.9s linear both;
+}
+
+#audio_btn {
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    z-index: 99;
+}

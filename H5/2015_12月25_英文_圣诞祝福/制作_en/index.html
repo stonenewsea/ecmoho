@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Best wishes from Ecmoho</title>
+<meta name="viewport" content="width = device-width,initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile.inline-png-1.4.5.min.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<script type="text/javascript">
+        window.onload=function(){
+            document.getElementById("loading").style.display = "none"; 
+        }
+</script>
+<script src="js/jquery-1.9.1-min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(function(){ 
+　　$("#circle-news-list0").bind("scrollstart",function(){ 
+　　　　$.mobile.changePage("#page1", {transition:"fade",reverse:true}, true, true); 
+　　}); 
+});
+$(function(){ 
+　　$("#circle-news-list").bind("scrollstart",function(){ 
+　　　　$.mobile.changePage("#page2", {transition:"fade",reverse:true}, true, true); 
+　　}); 
+});
+$(function(){ 
+　　$("#circle-news-list2").bind("scrollstart",function(){ 
+　　　　$.mobile.changePage("#page3", {transition:"fade",reverse:true}, true, true); 
+　　}); 
+});
+$(function(){ 
+　　$("#circle-news-list3").bind("scrollstart",function(){ 
+　　　　$.mobile.changePage("#page4", {transition:"fade",reverse:true}, true, true); 
+　　}); 
+});
+$(function(){ 
+　　$("#circle-news-list4").bind("scrollstart",function(){ 
+　　　　$.mobile.changePage("#page5", {transition:"fade",reverse:true}, true, true); 
+　　}); 
+});
+</script>
+</head>
+
+<body>
+<audio id="music" src="bg_music.mp3" autoplay loop>你的浏览器不支持audio标签。</audio>
+<a id="audio_btn" class="music"><img src="images/units-icons.png" width="27" height="27" id="music_btn" border="0"></a>
+
+<div id="loading" class="load6">
+	<div class="loader">Loading...</div>
+</div>
+<div style="background:url(images/page1_bg.gif) no-repeat;background-size:100% 100%;">
+	<div data-role="page" id="page0" class="page-0-0 page">
+    	<div class="wrap" data-role="listview" id="circle-news-list0">
+        	<div class="img_1 pt-page-moveCircles">
+                <img class="yancong" src="images/page0_img1.png">
+                
+        	</div>
+            <span class="btIcon"><img class="img02 moveIconup pt-page-moveIconUp" src="images/H5-1.png" /></span>
+        </div>
+        <img src="images/page1_bgtree.png" class="page1_bgtree" alt=""/>
+        <img src="images/page1_Bg.jpg" class="page1Bg" alt=""/>
+    </div>
+
+
+
+    <div data-role="page" id="page1" class="page page-1-1 page-current">
+        <div class="wrap" data-role="listview" id="circle-news-list">
+            <div class="img_1 pt-page-moveCircles">
+                <img class="house1" src="images/page1_img1.png" alt=""/>
+                <img class="house2" src="images/page1_img01.png" alt=""/>
+            </div>
+            <span class="page1_text"><img src="images/page1_text.png" class="img_2" alt=""/></span>
+            <span class="btIcon"><img class="img02 moveIconup pt-page-moveIconUp" src="images/H5-1.png" /></span>
+            <!--<img src="images/page1_img2.png" class="img02" width="148" height="148"  alt=""/>-->
+            <img src="images/page1_snow.png" class="snow" alt=""/>
+        </div>
+        <img src="images/page1_bgtree.png" class="page1_bgtree" alt=""/>
+        <img src="images/page1_Bg.jpg" class="page1Bg" alt=""/>
+    </div>
+    
+    
+    <div data-role="page" id="page2" class="page page-2-1 hide">
+        <div class="wrap" data-role="listview" id="class-news-list">
+            <div class="wrap" data-role="listview" id="circle-news-list2">
+            <div class="img_1s houselBt">
+                <img class="house3" src="images/page2_img1.png" alt=""/>
+            </div>
+            <span class="btIcon"><img class="img02s moveIconup pt-page-moveIconUp" src="images/H5-2.png" /></span>
+            <img src="images/page1_snow.png" class="snow" alt=""/>
+        </div>
+        <img src="images/page1_bgtree2.png" class="page1_bgtrees" alt=""/>
+        <img src="images/page1_Bg.jpg" class="page1Bg" alt=""/>
+        </div>
+    </div>
+    
+    
+    <div data-role="page" id="page3" class="page page-3-1 hide">
+        <div class="wrap" data-role="listview" id="class-news-list">
+            <div class="wrap" data-role="listview" id="circle-news-list3">
+            <img src="images/page3_text.png" class="page3_text"  alt=""/>
+            <div class="img_1s houselBt">
+                <img class="house3" src="images/page2_img2.png" alt=""/>
+            </div>
+            <span class="btIcon"><img class="img02s moveIconup pt-page-moveIconUp" src="images/H5-3.png" /></span>
+            <img src="images/page1_snow.png" class="snow" alt=""/>
+        </div>
+        <img src="images/page1_bgtree2.png" class="page1_bgtrees" alt=""/>
+        <img src="images/page1_Bg.jpg" class="page1Bg" alt=""/>
+        </div>
+    </div>
+    
+    
+    <div data-role="page" id="page4" class="page page-4-1 hide">
+        <div class="wrap" data-role="listview" id="class-news-list">
+            <div class="wrap" data-role="listview" id="circle-news-list4">
+            <img src="images/page4_text.png" class="page4_text"  alt=""/>
+            <div class="img_1s houselBt">
+                <img class="house3" src="images/page2_img2.png" alt=""/>
+            </div>
+            <span class="btIcon"><img class="img02s moveIconup pt-page-moveIconUp" src="images/H5-4.png" /></span>
+            <img src="images/page1_snow.png" class="snow" alt=""/>
+        </div>
+        <img src="images/page1_bgtree2.png" class="page1_bgtrees" alt=""/>
+        <img src="images/page1_Bg.jpg" class="page1Bg" alt=""/>
+        </div>
+    </div>
+    
+    
+    <div data-role="page" id="page5" class="page page-5-1 hide">
+        <div class="wrap" data-role="listview" id="class-news-list">
+            <div class="wrap" data-role="listview" id="circle-news-list5">
+                <div class="img_1s houselBt fadeOut"><img class="house3" src="images/page2_img1.png" alt=""/></div>
+                <span class="btIcon fadeOut"><img class="img02s moveIconup pt-page-moveIconUp" src="images/H5-5.png" /></span>
+                <div class="overPage">
+                	<img src="images/page5_img1.png" class="happyEnd" alt=""/>
+                    <img src="images/page5_img2.png" class="happyText" alt=""/>
+                    <img src="images/page5_img3.png" class="house4" alt=""/>
+                </div>
+              <img src="images/page1_snow.png" class="snow" alt=""/>
+            </div>
+            <img src="images/page1_bgtree2.png" class="page1_bgtrees" alt=""/>
+            <img src="images/page1_Bg.jpg" class="page1Bg" alt=""/>
+        </div>
+    </div>
+</div>
+<script>
+$("#audio_btn").click(function(){
+	var music = document.getElementById("music");
+	if(music.paused){
+		music.play();
+		$("#music_btn").attr("src","images/units-icons.png");
+	}else{
+		music.pause();
+		$("#music_btn").attr("src","images/units-icons2.png");
+	}
+});
+
+function playPause() {
+    var music = document.getElementById('music2');
+    var music_btn = document.getElementById('music_btn2');
+    if (music.paused){
+        music.play();
+        music_btn.src = 'images/units-icons.png';
+    }
+    else{
+        music.pause();
+        music_btn.src = 'images/units-icons2.png'; 
+    }
+}
+</script>
+</body>
+</html>
